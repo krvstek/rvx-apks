@@ -1,14 +1,14 @@
-🟢 » Music (arm64-v8a): `6.37.50`  
-🟢 » Music (arm-v7a): `6.37.50`  
+🟢 » Music (arm64-v8a): `6.39.50`  
+🟢 » Music (arm-v7a): `6.39.50`  
 🟢 » YouTube: `19.04.37`  
-🟢 » YouTube-Extended: `19.04.37`  
-🟢 » Music-Extended (arm64-v8a): `6.37.50`  
-🟢 » Music-Extended (arm-v7a): `6.37.50`  
-🟢 » Reddit: `2024.06.0`  
-🟢 » Reddit-Extended: `2024.06.0`  
-🟢 » X: `10.27.0-release.0`  
-🟢 » Twitch: `16.9.1`  
+🟢 » YouTube-Extended: `19.02.39`  
+🟢 » Music-Extended (arm64-v8a): `6.39.50`  
+🟢 » Music-Extended (arm-v7a): `6.39.50`  
+🟢 » Reddit: `2024.07.0`  
+🟢 » Reddit-Extended: `2024.07.0`  
+🟢 » X: `10.28.0-release.0`  
 🟢 » TikTok: `32.5.3`  
+🟢 » Twitch: `16.9.1`  
 
 - 🔰 » Install [MicroG-RE](https://github.com/WSTxda/MicroG-RE/releases) for non-root YouTube and YT Music  
 - 🔰 » Use [zygisk-detach (Magisk)](https://github.com/j-hc/zygisk-detach) module or [UpdateLocker (LSPosed)](https://github.com/Xposed-Modules-Repo/ru.mike.updatelocker/releases) to detach patched apps from being updated by Play Store  
@@ -20,6 +20,6 @@
 > [🔗 » Changelog](https://github.com/ReVanced/revanced-patches/releases/tag/v4.2.0)
 
 > 💻 » CLI: `inotia00/revanced-cli-4.4.1-all.jar`  
-> 🔩 » Integrations: `YT-Advanced/revanced-integrations-0.144.1.apk`  
-> 🧩 » Patches: `YT-Advanced/revanced-patches-2.220.5.jar`  
-> [🔗 » Changelog](https://github.com/YT-Advanced/ReX-patches/releases/tag/v2.220.5)  
+> 🔩 » Integrations: `YT-Advanced/revanced-integrations-0.144.2.apk`  
+> 🧩 » Patches: `YT-Advanced/revanced-patches-2.220.6.jar`  
+> [🔗 » Changelog](https://github.com/YT-Advanced/ReX-patches/releases/tag/v2.220.6)  
