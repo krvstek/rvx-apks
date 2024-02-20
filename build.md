@@ -1,11 +1,11 @@
 🟢 » Music (arm64-v8a): `6.39.50`  
 🟢 » Music (arm-v7a): `6.39.50`  
+🟢 » YouTube-Extended: `19.05.36`  
 🟢 » YouTube: `19.04.37`  
-🟢 » YouTube-Extended: `19.02.39`  
 🟢 » Music-Extended (arm64-v8a): `6.39.50`  
 🟢 » Music-Extended (arm-v7a): `6.39.50`  
-🟢 » Reddit: `2024.07.0`  
 🟢 » Reddit-Extended: `2024.07.0`  
+🟢 » Reddit: `2024.07.0`  
 🟢 » X: `10.28.0-release.0`  
 🟢 » TikTok: `32.5.3`  
 🟢 » Twitch: `16.9.1`  
