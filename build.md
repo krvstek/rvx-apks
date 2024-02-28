@@ -1,13 +1,13 @@
 🟢 » Music (arm64-v8a): `6.41.54`  
 🟢 » Music (arm-v7a): `6.41.54`  
-🟢 » YouTube-Extended: `19.07.40`  
 🟢 » YouTube: `19.04.37`  
+🟢 » YouTube-Extended: `19.05.36`  
 🟢 » Music-Extended (arm64-v8a): `6.41.54`  
 🟢 » Music-Extended (arm-v7a): `6.41.54`  
 🟢 » Reddit: `2024.08.0`  
 🟢 » Reddit-Extended: `2024.08.0`  
-🟢 » X: `10.29.0-release.0`  
 🟢 » Twitch: `16.9.1`  
+🟢 » X: `10.29.0-release.0`  
 🟢 » TikTok: `32.5.3`  
 
 - 🔰 » Install [MicroG-RE](https://github.com/WSTxda/MicroG-RE/releases) for non-root YouTube and YT Music  
