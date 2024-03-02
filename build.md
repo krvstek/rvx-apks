@@ -1,13 +1,14 @@
 🟢 » Music (arm64-v8a): `6.41.58`  
+🟢 » YouTube-Extended: `19.07.40`  
 🟢 » Music (arm-v7a): `6.41.58`  
-🟢 » Music-Extended (arm64-v8a): `6.41.58`  
 🟢 » YouTube: `19.04.37`  
+🟢 » Music-Extended (arm64-v8a): `6.41.58`  
 🟢 » Music-Extended (arm-v7a): `6.41.58`  
 🟢 » Reddit: `2024.08.0`  
 🟢 » Reddit-Extended: `2024.08.0`  
-🟢 » Twitch: `16.9.1`  
 🟢 » X: `10.30.0-release.0`  
 🟢 » TikTok: `32.5.3`  
+🟢 » Twitch: `16.9.1`  
 
 - 🔰 » Install [MicroG-RE](https://github.com/WSTxda/MicroG-RE/releases) for non-root YouTube and YT Music  
 - 🔰 » Use [zygisk-detach (Magisk)](https://github.com/j-hc/zygisk-detach) module or [UpdateLocker (LSPosed)](https://github.com/Xposed-Modules-Repo/ru.mike.updatelocker/releases) to detach patched apps from being updated by Play Store  
