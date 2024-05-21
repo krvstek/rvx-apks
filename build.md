@@ -1,9 +1,9 @@
-🟢 » Music-Extended (arm64-v8a): `6.50.51`  
-🟢 » Music-Extended (arm-v7a): `6.50.51`  
 🟢 » YouTube-Extended: `19.16.39`  
-🟢 » X: `10.42.0-release.0`  
+🟢 » Music-Extended (arm-v7a): `6.50.51`  
+🟢 » Music-Extended (arm64-v8a): `6.50.51`  
 🟢 » Reddit-Extended: `2024.17.0`  
 🟢 » Photomath: `8.37.0`  
+🟢 » X: `10.42.0-release.0`  
 🟢 » Twitch: `16.9.1`  
 🟢 » TikTok: `32.5.3`  
 
