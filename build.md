@@ -1,11 +1,12 @@
-🟢 » Music-Extended (arm-v7a): `7.03.51`  
-🟢 » Music-Extended (arm64-v8a): `7.03.51`  
 🟢 » Reddit-Extended: `2024.17.0`  
 🟢 » YouTube-Extended: `19.20.34`  
+🟢 » Music-Extended (arm-v7a): `7.03.51`  
+🟢 » Music-Extended (arm64-v8a): `7.03.51`  
+🟢 » Messenger: `460.0.0.48.109`  
 🟢 » X: `10.43.0-release.0`  
+🟢 » Photomath: `8.37.0`  
 🟢 » Twitch: `16.9.1`  
 🟢 » TikTok: `32.5.3`  
-🟢 » Photomath: `8.37.0`  
 
 - ▶️ » Install [GmsCore](https://github.com/ReVanced/GmsCore/releases) for non-root YouTube and YT Music APKs  
 - 🛑 » Use [zygisk-detach (Magisk)](https://github.com/j-hc/zygisk-detach) module or [UpdateLocker (LSPosed)](https://github.com/Xposed-Modules-Repo/ru.mike.updatelocker/releases) to detach patched apps from being updated by Play Store
@@ -21,6 +22,6 @@
 > [🔗 » Changelog](https://github.com/inotia00/revanced-patches/releases/tag/v4.8.6)
 
 > ⚙️ » CLI: `j-hc/revanced-cli-4.6.0-all.jar`  
-> ⚙️ » Integrations: `ReVanced/revanced-integrations-1.9.2.apk`  
-> ⚙️ » Patches: `ReVanced/revanced-patches-4.8.3.jar`  
-> [🔗 » Changelog](https://github.com/ReVanced/revanced-patches/releases/tag/v4.8.3)  
+> ⚙️ » Integrations: `ReVanced/revanced-integrations-1.10.0.apk`  
+> ⚙️ » Patches: `ReVanced/revanced-patches-4.9.0.jar`  
+> [🔗 » Changelog](https://github.com/ReVanced/revanced-patches/releases/tag/v4.9.0)  
