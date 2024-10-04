@@ -50,3 +50,7 @@ included-patches = "'SIM spoof'"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/duolingo/duolingo-duolingo"
 uptodown-dlurl = "https://duolingo.en.uptodown.com/android"
 apkmirror-dpi = "120-640dpi"
+
+[Soundcloud]
+apkmirror-dlurl = "https://www.apkmirror.com/apk/soundcloud/soundcloud-soundcloud"
+uptodown-dlurl = "https://soundcloud.en.uptodown.com/android"

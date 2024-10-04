@@ -30,6 +30,7 @@ Here you can download and use applications selected for this repository, which a
 
 - <picture><img src="https://play-lh.googleusercontent.com/LdBITldj-tJxqLm-CsWSbnt4BMo2gk53cgM7mWIL-zn44m1ywLyQgxRsHKqp8r0qceXs=s48-rw" width="20" height="20"></picture> [`TikTok`](https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically)
 - <picture><img src="https://play-lh.googleusercontent.com/vIMymGDzl2arE2styucCrIO35Qv6yX7iJJYZGmIUMXXV_mT5OyR5MjpkfHFB3tc8bA=s48-rw" width="20" height="20"></picture> [`Duolingo`](https://play.google.com/store/apps/details?id=com.duolingo)
+- <picture><img src="https://play-lh.googleusercontent.com/JSSeB3XQtb9sHD5FWTqVM4AksY_Kg2q20eExenxGqPJZdn2uVQxi8eoHkP5MA-IR4w=s48-rw" width="20" height="20"></picture> [`Soundcloud`](https://play.google.com/store/apps/details?id=com.soundcloud.android)
 </details>
 
 ### [🧩 `ReVanced Extended`](https://github.com/inotia00/revanced-patches)
