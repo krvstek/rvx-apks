@@ -1,4 +1,5 @@
 enable-magisk-update = true
+parallel-jobs = 1
 
 [YouTube]
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube" 
