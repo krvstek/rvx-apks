@@ -1,24 +1,25 @@
-🟢 » Music (arm-v7a): `7.16.53`  
-🟢 » Music (arm64-v8a): `7.16.53`  
-🟢 » Reddit: `2024.17.0`  
 🟢 » YouTube: `19.16.39`  
-🟢 » X: `10.62.1-release.0`  
+🟢 » Music (arm64-v8a): `7.16.53`  
+🟢 » Music (arm-v7a): `7.16.53`  
+🟢 » Reddit: `2024.17.0`  
+🟢 » X: `10.63.1-release.0`  
 🟢 » TikTok: `36.5.4`  
-🟢 » Duolingo: `6.2.4`  
+🟢 » Duolingo: `6.3.5`  
+🟢 » Soundcloud: `2024.10.16-release`  
 
 - ▶️ » Install [GmsCore](https://github.com/ReVanced/GmsCore/releases) or [MicroG-RE](https://github.com/WSTxda/MicroG-RE/releases) for non-root YouTube and YT Music APKs  
 - 🛑 » Use [zygisk-detach](https://github.com/j-hc/zygisk-detach) module to detach patched apps from being updated by Play Store
   
-> ⚙️ » Integrations: `crimera/revanced-integrations-1.31.0.apk`  
-> ⚙️ » Patches: `crimera/piko-twitter-patches-1.41.0.jar`  
-[🔗 » Changelog](https://github.com/crimera/piko/releases/tag/v1.41.0)
+> ⚙️ » Integrations: `crimera/revanced-integrations-1.31.1.apk`  
+> ⚙️ » Patches: `crimera/piko-twitter-patches-1.42.0.jar`  
+[🔗 » Changelog](https://github.com/crimera/piko/releases/tag/v1.42.0)
 
 > ⚙️ » CLI: `inotia00/revanced-cli-4.6.2-all.jar`  
-> ⚙️ » Integrations: `inotia00/revanced-integrations-1.14.2.apk`  
-> ⚙️ » Patches: `inotia00/revanced-patches-4.14.2.jar`  
-[🔗 » Changelog](https://github.com/inotia00/revanced-patches/releases/tag/v4.14.2)
+> ⚙️ » Integrations: `inotia00/revanced-integrations-1.15.1.apk`  
+> ⚙️ » Patches: `inotia00/revanced-patches-4.15.1.jar`  
+[🔗 » Changelog](https://github.com/inotia00/revanced-patches/releases/tag/v4.15.1)
 
 > ⚙️ » CLI: `j-hc/revanced-cli-4.6.0-all.jar`  
-> ⚙️ » Integrations: `ReVanced/revanced-integrations-1.15.0.apk`  
-> ⚙️ » Patches: `ReVanced/revanced-patches-4.16.0.jar`  
-[🔗 » Changelog](https://github.com/ReVanced/revanced-patches/releases/tag/v4.16.0)  
+> ⚙️ » Integrations: `ReVanced/revanced-integrations-1.16.0.apk`  
+> ⚙️ » Patches: `ReVanced/revanced-patches-4.17.0.jar`  
+[🔗 » Changelog](https://github.com/ReVanced/revanced-patches/releases/tag/v4.17.0)  
