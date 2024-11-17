@@ -1,0 +1,19 @@
+name: 🐞 Bug report
+description: Report a bug of this repo.
+title: '[Bug] '
+labels: ['bug']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Rules:
+
+        - Speak English only.
+        - Do not submit a ReVanced stuff like patch bugs or something unrelated to this repo.
+        - Do not submit a duplicate bug report.
+  - type: textarea
+    attributes:
+      label: Description
+      description: Describe a bug (send images / videos and logs if possible).
+    validations:
+        required: true

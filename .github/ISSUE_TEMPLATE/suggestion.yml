@@ -1,0 +1,19 @@
+name: 💡 Suggestion
+description: Suggest some changes to this repo (new patches repo, improvements to files / config, etc.).
+title: '[Suggestion] '
+labels: ['suggestion']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Rules:
+
+        - Speak English only.
+        - Do not submit a ReVanced stuff like patch features.
+        - Do not submit a duplicate suggestion.
+  - type: textarea
+    attributes:
+      label: Description
+      description: Describe it, how would it improve this repo?
+    validations:
+        required: true

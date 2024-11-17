@@ -1,50 +1,49 @@
-# ReVanced Magisk Module
-[![Telegram](https://img.shields.io/badge/Telegram-2CA5E0?style=for-the-badge&logo=telegram&logoColor=white)](https://t.me/rvc_magisk)
-[![CI](https://github.com/j-hc/revanced-magisk-module/actions/workflows/ci.yml/badge.svg?event=schedule)](https://github.com/j-hc/revanced-magisk-module/actions/workflows/ci.yml)
+<h1 align="center">
+    <picture>
+        <img src="https://readme-typing-svg.demolab.com?font=Google+Sans&size=25&pause=1000&color=F70000&center=true&vCenter=true&random=false&width=435&lines=%F0%9F%93%A6+ReVanced's+pre-made+APKs">
+    </picture>
+</h1>
 
-Extensive ReVanced builder  
+<p align="center">
+    <a href="https://github.com/krvstek/rvx-apks/actions/workflows//build.yml"><img alt="Build Status" src="https://github.com/krvstek/rvx-apks/actions/workflows/build.yml/badge.svg"></a>
+    <a href="https://github.com/krvstek/rvx-apks/releases/latest"><img alt="Click here!" src="https://img.shields.io/github/release-date/krvstek/rvx-apks?display_date=created_at&logo=android&label=Latest%20Release"></a>
+    <img alt="Downloads (Overall)" src="https://img.shields.io/github/downloads/krvstek/rvx-apks/total?logo=simpleanalytics&logoColor=%23FFFFFF&label=Downloads%20(Overall)">
+    <img alt="Downloads (Latest)" src="https://img.shields.io/github/downloads/krvstek/rvx-apks/latest/total?sort=semver&logo=simpleanalytics&logoColor=%23FFFFFF&label=Downloads%20(Latest)">
+</p>
 
-Get the [latest CI release](https://github.com/j-hc/revanced-magisk-module/releases).
+## ⭐ Overview
+Here you can download and use applications selected for this repository, which are modified and extended with many functionalities that will certainly be useful to you.
 
-Use [**zygisk-detach**](https://github.com/j-hc/zygisk-detach) to detach YouTube and YT Music from Play Store if you are using magisk modules. 
+> **Note**: Keep in mind that some builds may not work as expected due to changes in the app/patch code. In this case, there is nothing I can do, I just provide the pre-made APK files.
 
-<details><summary><big>Features</big></summary>
-<ul>
- <li>Support all present and future ReVanced and <a href="https://github.com/inotia00/revanced-patches">ReVanced Extended</a> apps</li>
- <li> Can build Magisk modules and non-root APKs</li>
- <li> Updated daily with the latest versions of apps and patches</li>
- <li> Optimize APKs and modules for size</li>
- <li> Modules</li>
-    <ul>
-     <li> recompile invalidated odex for faster usage</li>
-     <li> receive updates from Magisk app</li>
-     <li> do not break safetynet or trigger root detections</li>
-     <li> handle installation of the correct version of the stock app and all that</li>
-     <li> support Magisk and KernelSU</li>
-    </ul>
-</ul>
-Note that the <a href="../../actions/workflows/ci.yml">CI workflow</a> is scheduled to build the modules and APKs everyday using GitHub Actions if there is a change in ReVanced patches. You may want to disable it.
+## 🔥 Features
+- 🛑 **Ad-blocking**: blocks every kind of advertisement (who needs them?).
+- 🚀 **Extended functionality**: extracts more possibilities from the app.
+- ⭐ **Customization**: customize the application to your needs.
+- 📦 **Module support**: install & use YouTube without GmsCore (root only).
+- 💉 **Optimization**: optimized APKs / modules for size & faster usage.
+- ✨ **And much more!**
+
+## 💎 Updating apps
+You can update apps using [Obtainium](https://github.com/ImranR98/Obtainium/?tab=readme-ov-file#installation), which will check for new releases in this repo. Download the [config](https://github.com/krvstek/rvx-apks/blob/main/obtainium-rvx.json) and import it into Obtainium.
+
+## 📋 List of repos/apps in this repository
+
+> **Note**: We are currently only supporting official ReVanced due to an update that breaks many repositories. If the affected repositories are updated, I will add them to the supported list.
+
+### [🧩 `ReVanced`](https://github.com/ReVanced/revanced-patches)
+<details>
+
+- <picture><img src="https://play-lh.googleusercontent.com/6am0i3walYwNLc08QOOhRJttQENNGkhlKajXSERf3JnPVRQczIyxw2w3DxeMRTOSdsY=s48-rw" width="20" height="20"></picture> [`YouTube`](https://play.google.com/store/apps/details?id=com.google.android.youtube)
+- <picture><img src="https://play-lh.googleusercontent.com/zD8UA5CRdiPzbvTwGKtzR4KjQpxqEK6X0tGDpzEaOo0xPEvG6HUiC_0qkpTfzpuMTqU=s48-rw" width="20" height="20"></picture> [`YouTube Music`](https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music)
+- <picture><img src="https://play-lh.googleusercontent.com/6Bexlvoh-v0z0YnxzXo_U5e5A6UdAETe8pIYyQ2E2KfhVf2BK5J83pFXKZbt125FHHQ=s48-rw" width="20" height="20"></picture> [`Reddit`](https://play.google.com/store/apps/details?id=com.reddit.frontpage)
+- <picture><img src="https://play-lh.googleusercontent.com/XyI6Hyz9AFg7E_joVzX2zh6CpWm9B2DG2JuEz5meCFVm4-wTKTnHgqbmg62iFKe4Gzca=s48-rw" width="20" height="20"></picture> [`X (Twitter)`](https://play.google.com/store/apps/details?id=com.twitter.android)
+- <picture><img src="https://play-lh.googleusercontent.com/LdBITldj-tJxqLm-CsWSbnt4BMo2gk53cgM7mWIL-zn44m1ywLyQgxRsHKqp8r0qceXs=s48-rw" width="20" height="20"></picture> [`TikTok`](https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically)
+- <picture><img src="https://play-lh.googleusercontent.com/vIMymGDzl2arE2styucCrIO35Qv6yX7iJJYZGmIUMXXV_mT5OyR5MjpkfHFB3tc8bA=s48-rw" width="20" height="20"></picture> [`Duolingo`](https://play.google.com/store/apps/details?id=com.duolingo)
+- <picture><img src="https://play-lh.googleusercontent.com/JSSeB3XQtb9sHD5FWTqVM4AksY_Kg2q20eExenxGqPJZdn2uVQxi8eoHkP5MA-IR4w=s48-rw" width="20" height="20"></picture> [`Soundcloud`](https://play.google.com/store/apps/details?id=com.soundcloud.android)
 </details>
 
-## To include/exclude patches or patch other apps
-
- * Star the repo :eyes:
- * Use the repo as a [template](https://github.com/new?template_name=revanced-magisk-module&template_owner=j-hc)
- * Customize [`config.toml`](./config.toml) using [rvmm-config-gen](https://j-hc.github.io/rvmm-config-gen/)
- * Run the build [workflow](../../actions/workflows/build.yml)
- * Grab your modules and APKs from [releases](../../releases)
-
-also see here [`CONFIG.md`](./CONFIG.md)
-
-## Building Locally
-### On Termux
-```console
-bash <(curl -sSf https://raw.githubusercontent.com/j-hc/revanced-magisk-module/main/build-termux.sh)
-```
-
-### On Desktop
-```console
-$ git clone https://github.com/j-hc/revanced-magisk-module
-$ cd revanced-magisk-module
-$ ./build.sh
-```
+## 📜 Resources & Credits
+- [`Resources: ReVanced Guide`](https://kazimmt.github.io)
+- [`Credits: ReVanced`](https://github.com/revanced)
+- [`Credits: j-hc`](https://github.com/j-hc)

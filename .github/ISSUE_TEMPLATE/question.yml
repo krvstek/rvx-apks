@@ -1,0 +1,19 @@
+name: ❓ Question
+description: Ask about this repo.
+title: '[Question] '
+labels: ['question']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Rules:
+
+        - Speak English only.
+        - Do not submit a ReVanced stuff like patch bugs / features, that we don't affect in any way.
+        - Do not submit a duplicate question.
+  - type: textarea
+    attributes:
+      label: Description
+      description: How we can help you?
+    validations:
+        required: true
