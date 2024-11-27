@@ -6,7 +6,7 @@ compression-level = 9
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
 included-patches = "'Enable slide to seek' 'Custom branding' 'Change header'"
-patcher-args = "-OdarkThemeBackgroundColor=@android:color/system_neutral1_900 -OlightThemeBackgroundColor=@android:color/system_neutral1_50 -Oheader=premium*header "
+patcher-args = "-OdarkThemeBackgroundColor='@android:color/system_neutral1_900' -OlightThemeBackgroundColor='@android:color/system_neutral1_50' -Oheader='premium*header' "
 build-mode = "both"
 
 [Music]
