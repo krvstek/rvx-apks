@@ -29,17 +29,20 @@ You can update apps using [Obtainium](https://github.com/ImranR98/Obtainium/?tab
 
 ## 📋 List of repos/apps in this repository
 
-> **Note**: We are currently only supporting official ReVanced due to an update that breaks many repositories. If the affected repositories are updated, I will add them to the supported list.
-
 ### [🧩 `ReVanced`](https://github.com/ReVanced/revanced-patches)
+<details>
+
+- <picture><img src="https://play-lh.googleusercontent.com/XyI6Hyz9AFg7E_joVzX2zh6CpWm9B2DG2JuEz5meCFVm4-wTKTnHgqbmg62iFKe4Gzca=s48-rw" width="20" height="20"></picture> [`X (Twitter)`](https://play.google.com/store/apps/details?id=com.twitter.android)
+- <picture><img src="https://play-lh.googleusercontent.com/LdBITldj-tJxqLm-CsWSbnt4BMo2gk53cgM7mWIL-zn44m1ywLyQgxRsHKqp8r0qceXs=s48-rw" width="20" height="20"></picture> [`TikTok`](https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically)
+- <picture><img src="https://play-lh.googleusercontent.com/HB_3szdUrx-h16Iv8Rrvg9YAd3GrOW9f0tao7XyvevRyQovblTrISk1JuzLt7Wr-bl5Z=s48-rw" width="20" height="20"></picture> [`Duolingo`](https://play.google.com/store/apps/details?id=com.duolingo)
+</details>
+
+### [🧩 `ReVanced Extended`](https://github.com/inotia00/revanced-patches)
 <details>
 
 - <picture><img src="https://play-lh.googleusercontent.com/6am0i3walYwNLc08QOOhRJttQENNGkhlKajXSERf3JnPVRQczIyxw2w3DxeMRTOSdsY=s48-rw" width="20" height="20"></picture> [`YouTube`](https://play.google.com/store/apps/details?id=com.google.android.youtube)
 - <picture><img src="https://play-lh.googleusercontent.com/zD8UA5CRdiPzbvTwGKtzR4KjQpxqEK6X0tGDpzEaOo0xPEvG6HUiC_0qkpTfzpuMTqU=s48-rw" width="20" height="20"></picture> [`YouTube Music`](https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music)
 - <picture><img src="https://play-lh.googleusercontent.com/6Bexlvoh-v0z0YnxzXo_U5e5A6UdAETe8pIYyQ2E2KfhVf2BK5J83pFXKZbt125FHHQ=s48-rw" width="20" height="20"></picture> [`Reddit`](https://play.google.com/store/apps/details?id=com.reddit.frontpage)
-- <picture><img src="https://play-lh.googleusercontent.com/XyI6Hyz9AFg7E_joVzX2zh6CpWm9B2DG2JuEz5meCFVm4-wTKTnHgqbmg62iFKe4Gzca=s48-rw" width="20" height="20"></picture> [`X (Twitter)`](https://play.google.com/store/apps/details?id=com.twitter.android)
-- <picture><img src="https://play-lh.googleusercontent.com/LdBITldj-tJxqLm-CsWSbnt4BMo2gk53cgM7mWIL-zn44m1ywLyQgxRsHKqp8r0qceXs=s48-rw" width="20" height="20"></picture> [`TikTok`](https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically)
-- <picture><img src="https://play-lh.googleusercontent.com/vIMymGDzl2arE2styucCrIO35Qv6yX7iJJYZGmIUMXXV_mT5OyR5MjpkfHFB3tc8bA=s48-rw" width="20" height="20"></picture> [`Duolingo`](https://play.google.com/store/apps/details?id=com.duolingo)
 </details>
 
 ## 📜 Resources & Credits

@@ -5,20 +5,29 @@ compression-level = 9
 [YouTube]
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
-included-patches = "'Enable slide to seek' 'Custom branding' 'Change header'"
-patcher-args = "-OdarkThemeBackgroundColor='@android:color/system_neutral1_900' -OlightThemeBackgroundColor='@android:color/system_neutral1_50' -Oheader='premium*header' "
+patches-source = "inotia00/revanced-patches"
+cli-source = "inotia00/revanced-cli"
+rv-brand = "ReVanced Extended"
+included-patches = "'MaterialYou' 'Return YouTube Username'"
+excluded-patches = "'Theme'"
 build-mode = "both"
 
 [Music]
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music"
-included-patches = "'Permanent repeat'"
+patches-source = "inotia00/revanced-patches"
+cli-source = "inotia00/revanced-cli"
+rv-brand = "ReVanced Extended"
+included-patches = "'Return YouTube Username'"
 build-mode = "both"
 arch = "both"
 
 [Reddit]
 uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit"
+patches-source = "inotia00/revanced-patches"
+cli-source = "inotia00/revanced-cli"
+rv-brand = "ReVanced Extended"
 
 [X]
 uptodown-dlurl = "https://twitter.en.uptodown.com/android"
