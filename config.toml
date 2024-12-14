@@ -9,7 +9,6 @@ patches-source = "inotia00/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
 included-patches = "'MaterialYou' 'Return YouTube Username'"
-excluded-patches = "'Theme'"
 build-mode = "both"
 
 [Music]
