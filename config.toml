@@ -29,6 +29,7 @@ apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit"
 patches-source = "inotia00/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
+version = "2024.29.0"
 
 [X]
 uptodown-dlurl = "https://twitter.en.uptodown.com/android"
@@ -37,7 +38,7 @@ apkmirror-dpi = "120-640dpi"
 
 [TikTok]
 uptodown-dlurl = "https://tiktok.en.uptodown.com/android"
-apkmirror-dlurl = "https://apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly"
+# apkmirror-dlurl = "https://apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly"
 included-patches = "'SIM spoof'"
 
 [Duolingo]

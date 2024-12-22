@@ -34,7 +34,7 @@ You can update apps using [Obtainium](https://github.com/ImranR98/Obtainium/?tab
 
 - <picture><img src="https://play-lh.googleusercontent.com/XyI6Hyz9AFg7E_joVzX2zh6CpWm9B2DG2JuEz5meCFVm4-wTKTnHgqbmg62iFKe4Gzca=s48-rw" width="20" height="20"></picture> [`X (Twitter)`](https://play.google.com/store/apps/details?id=com.twitter.android)
 - <picture><img src="https://play-lh.googleusercontent.com/LdBITldj-tJxqLm-CsWSbnt4BMo2gk53cgM7mWIL-zn44m1ywLyQgxRsHKqp8r0qceXs=s48-rw" width="20" height="20"></picture> [`TikTok`](https://play.google.com/store/apps/details?id=com.zhiliaoapp.musically)
-- <picture><img src="https://play-lh.googleusercontent.com/HB_3szdUrx-h16Iv8Rrvg9YAd3GrOW9f0tao7XyvevRyQovblTrISk1JuzLt7Wr-bl5Z=s48-rw" width="20" height="20"></picture> [`Duolingo`](https://play.google.com/store/apps/details?id=com.duolingo)
+- <picture><img src="https://play-lh.googleusercontent.com/8pKtLZZh7050RH3nFWK6R2RNSR9ltGKuW4NY0kh0NdxThqAYwNY0QnOLRswpNOnMpREw=s48-rw" width="20" height="20"></picture> [`Duolingo`](https://play.google.com/store/apps/details?id=com.duolingo)
 </details>
 
 ### [🧩 `ReVanced Extended`](https://github.com/inotia00/revanced-patches)
