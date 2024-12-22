@@ -9,6 +9,7 @@ patches-source = "inotia00/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
 included-patches = "'MaterialYou' 'Return YouTube Username'"
+patcher-args = "--legacy-options=options.json"
 build-mode = "both"
 
 [Music]
@@ -18,6 +19,7 @@ patches-source = "inotia00/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
 included-patches = "'Return YouTube Username'"
+patcher-args = "--legacy-options=options.json"
 build-mode = "both"
 arch = "both"
 

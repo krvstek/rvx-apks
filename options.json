@@ -1,0 +1,88 @@
+[
+  {
+    "patchName": "Custom branding icon for YouTube Music",
+    "options": [
+      {
+        "key": "appIcon",
+        "value": "revancify_red"
+      },
+      {
+        "key": "changeSplashIcon",
+        "value": true
+      },
+      {
+        "key": "restoreOldSplashIcon",
+        "value": true
+      }
+    ]
+  },
+  {
+    "patchName": "Visual preferences icons for YouTube Music",
+    "options": [
+      {
+        "key": "settingsMenuIcon",
+        "value": "revanced"
+      }
+    ]
+  },
+  {
+    "patchName": "Custom branding icon for YouTube",
+    "options": [
+      {
+        "key": "appIcon",
+        "value": "revancify_red"
+      },
+      {
+        "key": "changeSplashIcon",
+        "value": true
+      },
+      {
+        "key": "restoreOldSplashAnimation",
+        "value": true
+      }
+    ]
+  },
+  {
+    "patchName": "Visual preferences icons for YouTube",
+    "options": [
+      {
+        "key": "settingsMenuIcon",
+        "value": "revanced"
+      },
+      {
+        "key": "applyToAll",
+        "value": true
+      }
+    ]
+  },
+  {
+    "patchName": "Overlay buttons",
+    "options": [
+      {
+        "key": "iconType",
+        "value": "rounded"
+      },
+      {
+        "key": "bottomMargin",
+        "value": "2.5dip"
+      },
+      {
+        "key": "widerButtonsSpace",
+        "value": false
+      },
+      {
+        "key": "changeTopButtons",
+        "value": true
+      }
+    ]
+  },
+  {
+    "patchName": "SponsorBlock",
+    "options": [
+      {
+        "key": "outlineIcon",
+        "value": true
+      }
+    ]
+  }
+]
