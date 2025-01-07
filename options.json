@@ -17,6 +17,19 @@
     ]
   },
   {
+    "patchName": "Dark theme",
+    "options": [
+      {
+        "key": "darkThemeBackgroundColor",
+        "value": "@android:color/black"
+      },
+      {
+        "key": "materialYou",
+        "value": true
+      }
+    ]
+  },
+  {
     "patchName": "Visual preferences icons for YouTube Music",
     "options": [
       {
