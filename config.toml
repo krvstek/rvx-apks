@@ -29,6 +29,8 @@ apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit"
 patches-source = "inotia00/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
+included-patches = "'Custom branding name for Reddit'"
+patcher-args = "--legacy-options=options.json"
 apkmirror-dpi = "120-640dpi"
 
 [X]

@@ -39,6 +39,15 @@
     ]
   },
   {
+    "patchName": "Custom branding name for Reddit",
+    "options": [
+      {
+        "key": "appName",
+        "value": "RVX Reddit"
+      }
+    ]
+  },
+  {
     "patchName": "Custom branding icon for YouTube",
     "options": [
       {
