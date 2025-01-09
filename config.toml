@@ -33,17 +33,15 @@ included-patches = "'Custom branding name for Reddit'"
 patcher-args = "--legacy-options=options.json"
 apkmirror-dpi = "120-640dpi"
 
-[X]
-uptodown-dlurl = "https://twitter.en.uptodown.com/android"
-apkmirror-dlurl = "https://apkmirror.com/apk/x-corp/twitter"
-apkmirror-dpi = "120-640dpi"
+[Telegram]
+apkmirror-dlurl = "https://www.apkmirror.com/apk/telegram-fz-llc/telegram"
+uptodown-dlurl = "https://telegram.en.uptodown.com/android"
+patches-source = "Aunali321/ReVancedExperiments"
+rv-brand = "ReVanced Experiments"
 
-[TikTok]
-uptodown-dlurl = "https://tiktok.en.uptodown.com/android"
-# apkmirror-dlurl = "https://apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly"
-included-patches = "'SIM spoof'"
-
-[Duolingo]
-uptodown-dlurl = "https://duolingo.en.uptodown.com/android"
-apkmirror-dlurl = "https://apkmirror.com/apk/duolingo/duolingo-duolingo"
-apkmirror-dpi = "120-640dpi"
+[Instagram]
+uptodown-dlurl = "https://instagram.en.uptodown.com/android"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
+patches-source = "Aunali321/ReVancedExperiments"
+rv-brand = "ReVanced Experiments"
+arch = "both"
