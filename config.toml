@@ -23,6 +23,14 @@ patcher-args = "--legacy-options=options.json"
 build-mode = "both"
 arch = "both"
 
+[Reddit]
+uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
+apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit"
+patches-source = "inotia00/revanced-patches"
+cli-source = "inotia00/revanced-cli"
+rv-brand = "ReVanced Extended"
+apkmirror-dpi = "120-640dpi"
+
 [Telegram]
 apkmirror-dlurl = "https://www.apkmirror.com/apk/telegram-fz-llc/telegram"
 uptodown-dlurl = "https://telegram.en.uptodown.com/android"
