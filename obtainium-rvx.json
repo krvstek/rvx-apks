@@ -58,7 +58,7 @@
             "allowIdChange": false
         },
         {
-            "id": "org.telegram.messenger",
+            "id": "org.telegram.messenger.web",
             "url": "https://github.com/krvstek/rvx-apks",
             "author": "krvstek",
             "name": "Telegram",
