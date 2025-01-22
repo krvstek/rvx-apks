@@ -1,14 +1,19 @@
 [
   {
+    "patchName": "Custom branding icon for YouTube",
+    "options": [
+      {
+        "key": "appIcon",
+        "value": "revancify_red"
+      }
+    ]
+  },
+  {
     "patchName": "Custom branding icon for YouTube Music",
     "options": [
       {
         "key": "appIcon",
         "value": "revancify_red"
-      },
-      {
-        "key": "changeSplashIcon",
-        "value": true
       },
       {
         "key": "restoreOldSplashIcon",
@@ -30,36 +35,44 @@
     ]
   },
   {
-    "patchName": "Visual preferences icons for YouTube Music",
+    "patchName": "Overlay buttons",
     "options": [
       {
-        "key": "settingsMenuIcon",
-        "value": "revanced"
-      }
-    ]
-  },
-  {
-    "patchName": "Custom branding name for Reddit",
-    "options": [
-      {
-        "key": "appName",
-        "value": "RVX Reddit"
-      }
-    ]
-  },
-  {
-    "patchName": "Custom branding icon for YouTube",
-    "options": [
-      {
-        "key": "appIcon",
-        "value": "revancify_red"
+        "key": "iconType",
+        "value": "rounded"
       },
       {
-        "key": "changeSplashIcon",
+        "key": "widerButtonsSpace",
         "value": true
       },
       {
-        "key": "restoreOldSplashAnimation",
+        "key": "changeTopButtons",
+        "value": true
+      }
+    ]
+  },
+  {
+    "patchName": "Snack bar components",
+    "options": [
+      {
+        "key": "darkThemeBackgroundColor",
+        "value": "@android:color/black"
+      },
+      {
+        "key": "lightThemeBackgroundColor",
+        "value": "@android:color/white"
+      },
+      {
+        "key": "strokeColor",
+        "value": "?attr/ytChipBackground"
+      }
+    ]
+  },
+  {
+    "patchName": "SponsorBlock",
+    "options": [
+      {
+        "key": "outlineIcon",
         "value": true
       }
     ]
@@ -78,32 +91,11 @@
     ]
   },
   {
-    "patchName": "Overlay buttons",
+    "patchName": "Visual preferences icons for YouTube Music",
     "options": [
       {
-        "key": "iconType",
-        "value": "rounded"
-      },
-      {
-        "key": "bottomMargin",
-        "value": "2.5dip"
-      },
-      {
-        "key": "widerButtonsSpace",
-        "value": false
-      },
-      {
-        "key": "changeTopButtons",
-        "value": true
-      }
-    ]
-  },
-  {
-    "patchName": "SponsorBlock",
-    "options": [
-      {
-        "key": "outlineIcon",
-        "value": true
+        "key": "settingsMenuIcon",
+        "value": "revanced"
       }
     ]
   }

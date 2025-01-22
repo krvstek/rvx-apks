@@ -30,7 +30,7 @@ patches-source = "inotia00/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
 apkmirror-dpi = "120-640dpi"
-version = "2025.02.0"
+version = "2025.03.0"
 
 [Telegram]
 uptodown-dlurl = "https://telegram.en.uptodown.com/android"
