@@ -30,16 +30,3 @@ patches-source = "inotia00/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
 apkmirror-dpi = "120-640dpi"
-
-[Telegram]
-uptodown-dlurl = "https://telegram.en.uptodown.com/android"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/telegram-fz-llc/telegram"
-patches-source = "Aunali321/ReVancedExperiments"
-rv-brand = "ReVanced Experiments"
-
-[Instagram]
-uptodown-dlurl = "https://instagram.en.uptodown.com/android"
-# apkmirror-dlurl = "https://www.apkmirror.com/apk/instagram/instagram-instagram"
-patches-source = "Aunali321/ReVancedExperiments"
-rv-brand = "ReVanced Experiments"
-arch = "both"
