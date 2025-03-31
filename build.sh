@@ -10,6 +10,11 @@ if [ "${1-}" = "clean" ]; then
 fi
 
 source utils.sh
+
+jq --version >/dev/null || abort "\`jq\` is not installed. install it with 'apt install jq' or equivalent"
+java --version >/dev/null || abort "\`openjdk 17\` is not installed. install it with 'apt install openjdk-17-jre' or equivalent"
+zip --version >/dev/null || abort "\`zip\` is not installed. install it with 'apt install zip' or equivalent"
+
 set_prebuilts
 
 vtf() { if ! isoneof "${1}" "true" "false"; then abort "ERROR: '${1}' is not a valid option for '${2}': only true or false is allowed"; fi; }
