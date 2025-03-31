@@ -30,3 +30,16 @@ patches-source = "inotia00/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
 apkmirror-dpi = "120-640dpi"
+
+[X]
+uptodown-dlurl = "https://twitter.en.uptodown.com/android"
+apkmirror-dlurl = "https://apkmirror.com/apk/x-corp/twitter"
+version = "10.84.0-release.0"
+apkmirror-dpi = "120-640dpi"
+
+[Soundcloud]
+uptodown-dlurl = "https://soundcloud.en.uptodown.com/android"
+apkmirror-dlurl = "https://apkmirror.com/apk/soundcloud/soundcloud-soundcloud"
+
+[Spotify]
+uptodown-dlurl = "https://spotify.en.uptodown.com/android"
