@@ -43,3 +43,4 @@ apkmirror-dlurl = "https://apkmirror.com/apk/soundcloud/soundcloud-soundcloud"
 
 [Spotify]
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
+arch = "arm64-v8a"
