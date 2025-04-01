@@ -37,10 +37,6 @@ apkmirror-dlurl = "https://apkmirror.com/apk/x-corp/twitter"
 version = "10.84.0-release.0"
 apkmirror-dpi = "120-640dpi"
 
-[Soundcloud]
-uptodown-dlurl = "https://soundcloud.en.uptodown.com/android"
-apkmirror-dlurl = "https://apkmirror.com/apk/soundcloud/soundcloud-soundcloud"
-
 [Spotify]
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
 arch = "arm64-v8a"
