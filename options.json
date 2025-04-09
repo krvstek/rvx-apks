@@ -22,6 +22,15 @@
     ]
   },
   {
+    "patchName": "Custom branding name for Reddit",
+    "options": [
+      {
+        "key": "appName",
+        "value": "RVX Reddit"
+      }
+    ]
+  },
+  {
     "patchName": "Dark theme",
     "options": [
       {
