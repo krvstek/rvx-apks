@@ -32,7 +32,6 @@ You can update apps using [Obtainium](https://github.com/ImranR98/Obtainium/?tab
 ### [🧩 `ReVanced`](https://github.com/ReVanced/revanced-patches)
 <details>
 
-- <picture><img src="https://play-lh.googleusercontent.com/XyI6Hyz9AFg7E_joVzX2zh6CpWm9B2DG2JuEz5meCFVm4-wTKTnHgqbmg62iFKe4Gzca=s48-rw" width="20" height="20"></picture> [`X (Twitter)`](https://play.google.com/store/apps/details?id=com.twitter.android)
 - <picture><img src="https://play-lh.googleusercontent.com/7ynvVIRdhJNAngCg_GI7i8TtH8BqkJYmffeUHsG-mJOdzt1XLvGmbsKuc5Q1SInBjDKN=s48-rw" width="20" height="20"></picture> [`Spotify`](https://play.google.com/store/apps/details?id=com.spotify.music)
 </details>
 
