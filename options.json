@@ -31,6 +31,15 @@
     ]
   },
   {
+    "patchName": "Custom branding name for Spotify",
+    "options": [
+      {
+        "key": "appName",
+        "value": "RVX Spotify"
+      }
+    ]
+  },
+  {
     "patchName": "Dark theme",
     "options": [
       {

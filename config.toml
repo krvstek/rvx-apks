@@ -35,4 +35,9 @@ apkmirror-dpi = "120-640dpi"
 
 [Spotify]
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
+patches-source = "anddea/revanced-patches"
+cli-source = "inotia00/revanced-cli"
+rv-brand = "ReVanced Extended"
+included-patches = "'Change version code' 'Custom branding name for Spotify' 'Custom theme'"
+patcher-args = "--legacy-options=options.json"
 arch = "arm64-v8a"

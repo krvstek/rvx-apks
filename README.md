@@ -29,18 +29,18 @@ You can update apps using [Obtainium](https://github.com/ImranR98/Obtainium/?tab
 
 ## 📋 List of repos/apps in this repository
 
-### [🧩 `ReVanced`](https://github.com/ReVanced/revanced-patches)
-<details>
-
-- <picture><img src="https://play-lh.googleusercontent.com/7ynvVIRdhJNAngCg_GI7i8TtH8BqkJYmffeUHsG-mJOdzt1XLvGmbsKuc5Q1SInBjDKN=s48-rw" width="20" height="20"></picture> [`Spotify`](https://play.google.com/store/apps/details?id=com.spotify.music)
-</details>
-
 ### [🧩 `ReVanced Extended`](https://github.com/inotia00/revanced-patches)
 <details>
 
 - <picture><img src="https://play-lh.googleusercontent.com/6am0i3walYwNLc08QOOhRJttQENNGkhlKajXSERf3JnPVRQczIyxw2w3DxeMRTOSdsY=s48-rw" width="20" height="20"></picture> [`YouTube`](https://play.google.com/store/apps/details?id=com.google.android.youtube)
 - <picture><img src="https://play-lh.googleusercontent.com/zD8UA5CRdiPzbvTwGKtzR4KjQpxqEK6X0tGDpzEaOo0xPEvG6HUiC_0qkpTfzpuMTqU=s48-rw" width="20" height="20"></picture> [`YouTube Music`](https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music)
 - <picture><img src="https://play-lh.googleusercontent.com/6Bexlvoh-v0z0YnxzXo_U5e5A6UdAETe8pIYyQ2E2KfhVf2BK5J83pFXKZbt125FHHQ=s48-rw" width="20" height="20"></picture> [`Reddit`](https://play.google.com/store/apps/details?id=com.reddit.frontpage)
+</details>
+
+### [🧩 `ReVanced Extended (anddea)`](https://github.com/anddea/revanced-patches)
+<details>
+
+- <picture><img src="https://play-lh.googleusercontent.com/7ynvVIRdhJNAngCg_GI7i8TtH8BqkJYmffeUHsG-mJOdzt1XLvGmbsKuc5Q1SInBjDKN=s48-rw" width="20" height="20"></picture> [`Spotify`](https://play.google.com/store/apps/details?id=com.spotify.music)
 </details>
 
 ## 📜 Resources & Credits
