@@ -4,7 +4,7 @@
     "options": [
       {
         "key": "appIcon",
-        "value": "revancify_red"
+        "value": "mmt"
       },
       {
         "key": "restoreOldSplashAnimation",
@@ -17,7 +17,7 @@
     "options": [
       {
         "key": "appIcon",
-        "value": "revancify_red"
+        "value": "mmt"
       }
     ]
   },
@@ -87,24 +87,11 @@
     ]
   },
   {
-    "patchName": "SponsorBlock",
-    "options": [
-      {
-        "key": "outlineIcon",
-        "value": true
-      }
-    ]
-  },
-  {
     "patchName": "Visual preferences icons for YouTube",
     "options": [
       {
         "key": "settingsMenuIcon",
         "value": "revanced"
-      },
-      {
-        "key": "applyToAll",
-        "value": true
       }
     ]
   },
@@ -114,6 +101,19 @@
       {
         "key": "settingsMenuIcon",
         "value": "revanced"
+      }
+    ]
+  },
+  {
+    "patchName": "GmsCore support",
+    "options": [
+      {
+        "key": "packageNameYouTube",
+        "value": "app.rvx.android.youtube"
+      },
+      {
+        "key": "packageNameYouTubeMusic",
+        "value": "app.rvx.android.apps.youtube.music"
       }
     ]
   }
