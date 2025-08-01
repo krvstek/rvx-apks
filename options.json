@@ -60,10 +60,6 @@
         "value": "rounded"
       },
       {
-        "key": "widerButtonsSpace",
-        "value": true
-      },
-      {
         "key": "changeTopButtons",
         "value": true
       }
