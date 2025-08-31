@@ -2,12 +2,14 @@ enable-magisk-update = true
 parallel-jobs = 1
 compression-level = 9
 
-[YouTube]
-uptodown-dlurl = "https://youtube.en.uptodown.com/android"
-apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
 patches-source = "anddea/revanced-patches"
 cli-source = "inotia00/revanced-cli"
 rv-brand = "ReVanced Extended"
+patches-version = "v3.12.0-dev.9"
+
+[YouTube]
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
 included-patches = "'Change version code' 'Custom branding icon for YouTube' 'Custom branding name for YouTube' 'MaterialYou' 'Theme'"
 patcher-args = "--legacy-options=options.json"
 build-mode = "both"
@@ -16,9 +18,6 @@ version = "20.21.37"
 [Music]
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music"
-patches-source = "anddea/revanced-patches"
-cli-source = "inotia00/revanced-cli"
-rv-brand = "ReVanced Extended"
 included-patches = "'Change version code' 'Custom branding icon for YouTube Music' 'Custom branding name for YouTube Music' 'Disable music video in album' 'Enable debug logging'"
 patcher-args = "--legacy-options=options.json"
 build-mode = "both"
@@ -27,17 +26,11 @@ arch = "both"
 [Reddit]
 uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit"
-patches-source = "anddea/revanced-patches"
-cli-source = "inotia00/revanced-cli"
-rv-brand = "ReVanced Extended"
 included-patches = "'Change version code' 'Custom branding name for Reddit'"
 patcher-args = "--legacy-options=options.json"
 apkmirror-dpi = "120-640dpi"
 
 [Spotify]
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
-patches-source = "anddea/revanced-patches"
-cli-source = "inotia00/revanced-cli"
-rv-brand = "ReVanced Extended"
 included-patches = "'Change version code' 'Custom branding name for Spotify' 'Custom theme'"
 patcher-args = "--legacy-options=options.json"
