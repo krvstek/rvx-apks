@@ -5,10 +5,6 @@
       {
         "key": "appIcon",
         "value": "mmt"
-      },
-      {
-        "key": "restoreOldSplashAnimation",
-        "value": false
       }
     ]
   },
@@ -40,6 +36,15 @@
     ]
   },
   {
+    "patchName": "Custom theme",
+    "options": [
+      {
+        "key": "minimalIcon",
+        "value": true
+      }
+    ]
+  },
+  {
     "patchName": "Dark theme",
     "options": [
       {
@@ -58,6 +63,10 @@
       {
         "key": "iconType",
         "value": "rounded"
+      },
+      {
+        "key": "widerButtonsSpace",
+        "value": true
       },
       {
         "key": "changeTopButtons",
@@ -79,6 +88,19 @@
       {
         "key": "strokeColor",
         "value": "?attr/ytChipBackground"
+      }
+    ]
+  },
+    {
+    "patchName": "Spoof streaming data",
+    "options": [
+      {
+        "key": "outlineIcon",
+        "value": true
+      },
+      {
+        "key": "useMobileWebClient",
+        "value": true
       }
     ]
   },

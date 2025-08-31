@@ -23,7 +23,6 @@ included-patches = "'Change version code' 'Custom branding icon for YouTube Musi
 patcher-args = "--legacy-options=options.json"
 build-mode = "both"
 arch = "both"
-version = "8.24.54"
 
 [Reddit]
 uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
