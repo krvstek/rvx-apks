@@ -50,10 +50,6 @@
       {
         "key": "darkThemeBackgroundColor",
         "value": "@android:color/black"
-      },
-      {
-        "key": "materialYou",
-        "value": true
       }
     ]
   },
