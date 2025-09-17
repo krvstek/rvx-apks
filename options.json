@@ -27,36 +27,10 @@
     ]
   },
   {
-    "patchName": "Custom theme",
-    "options": [
-      {
-        "key": "minimalIcon",
-        "value": true
-      }
-    ]
-  },
-  {
-    "patchName": "Dark theme",
-    "options": [
-      {
-        "key": "darkThemeBackgroundColor",
-        "value": "@android:color/black"
-      }
-    ]
-  },
-  {
     "patchName": "Overlay buttons",
     "options": [
       {
-        "key": "iconType",
-        "value": "rounded"
-      },
-      {
         "key": "widerButtonsSpace",
-        "value": true
-      },
-      {
-        "key": "changeTopButtons",
         "value": true
       }
     ]
@@ -75,19 +49,6 @@
       {
         "key": "strokeColor",
         "value": "?attr/ytChipBackground"
-      }
-    ]
-  },
-    {
-    "patchName": "Spoof streaming data",
-    "options": [
-      {
-        "key": "outlineIcon",
-        "value": true
-      },
-      {
-        "key": "useMobileWebClient",
-        "value": true
       }
     ]
   },
