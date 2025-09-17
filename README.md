@@ -41,6 +41,7 @@ You can update apps using [Obtainium](https://github.com/ImranR98/Obtainium/?tab
 
 ## 📜 Resources & Credits
 - [`Resources: anddea's wiki`](https://github.com/anddea/revanced-patches/wiki)
+- [`Resources: RVX Community Guides`](https://github.com/ReVanced-Extended-Community/Community-Guides)
 - [`Credits: ReVanced`](https://github.com/revanced)
 - [`Credits: j-hc`](https://github.com/j-hc)
 - [`Credits: anddea`](https://github.com/anddea)
