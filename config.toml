@@ -28,3 +28,8 @@ apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit"
 included-patches = "'Change version code'"
 patcher-args = "-e 'Custom branding name for Reddit' -OappName='RVX Reddit'"
 apkmirror-dpi = "120-640dpi"
+
+[Spotify]
+uptodown-dlurl = "https://spotify.en.uptodown.com/android"
+included-patches = "'Change version code' 'Custom theme'"
+patcher-args = "-e 'Custom branding name for Spotify' -OappName='RVX Spotify'"
