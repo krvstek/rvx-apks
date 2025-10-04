@@ -1,7 +1,7 @@
 {
     "apps": [
         {
-            "id": "app.rvx.android.youtube",
+            "id": "anddea.youtube",
             "url": "https://github.com/krvstek/rvx-apks",
             "author": "krvstek",
             "name": "YouTube",
@@ -20,7 +20,7 @@
             "allowIdChange": false
         },
         {
-            "id": "app.rvx.android.apps.youtube.music",
+            "id": "anddea.youtube.music",
             "url": "https://github.com/krvstek/rvx-apks",
             "author": "krvstek",
             "name": "YouTube Music",
