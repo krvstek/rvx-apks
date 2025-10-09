@@ -33,3 +33,12 @@ dpi = "120-640dpi"
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
 included-patches = "'Change version code' 'Custom theme'"
 patcher-args = "-e 'Custom branding name for Spotify' -OappName='RVX Spotify'"
+
+[X]
+enabled = false
+uptodown-dlurl = "https://twitter.en.uptodown.com/android"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
+patches-source = "crimera/piko"
+rv-brand = "Piko"
+included-patches = "'Change version code'"
+dpi = "120-640dpi"
