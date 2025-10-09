@@ -27,7 +27,7 @@ uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit"
 included-patches = "'Change version code'"
 patcher-args = "-e 'Custom branding name for Reddit' -OappName='RVX Reddit'"
-apkmirror-dpi = "120-640dpi"
+dpi = "120-640dpi"
 
 [Spotify]
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
