@@ -1,14 +1,14 @@
 <h1 align="center">
     <picture>
-        <img src="https://readme-typing-svg.demolab.com?font=Google+Sans&size=25&pause=1000&color=F70000&center=true&vCenter=true&random=false&width=435&lines=%F0%9F%93%A6+ReVanced's+pre-made+APKs">
+        <img src="https://readme-typing-svg.demolab.com?font=Google+Sans&size=25&pause=1000&color=4500FF&center=true&vCenter=true&random=false&width=435&lines=%F0%9F%93%A6+ReVanced's+pre-made+APKs">
     </picture>
 </h1>
 
 <p align="center">
-    <a href="https://github.com/krvstek/rvx-apks/actions/workflows//build.yml"><img alt="Build Status" src="https://github.com/krvstek/rvx-apks/actions/workflows/build.yml/badge.svg"></a>
-    <a href="https://github.com/krvstek/rvx-apks/releases/latest"><img alt="Click here!" src="https://img.shields.io/github/release-date/krvstek/rvx-apks?display_date=created_at&logo=android&label=Latest%20Release"></a>
-    <img alt="Downloads (Overall)" src="https://img.shields.io/github/downloads/krvstek/rvx-apks/total?logo=simpleanalytics&logoColor=%23FFFFFF&label=Downloads%20(Overall)">
-    <img alt="Downloads (Latest)" src="https://img.shields.io/github/downloads/krvstek/rvx-apks/latest/total?sort=semver&logo=simpleanalytics&logoColor=%23FFFFFF&label=Downloads%20(Latest)">
+    <img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/krvstek/rvx-apks/build.yml?style=flat-square&logo=githubactions&logoColor=%23FFFFFF&label=Build%20Status&color=%234500FF">
+    <img alt="Latest Release" src="https://img.shields.io/github/release-date/krvstek/rvx-apks?display_date=created_at&style=flat-square&logo=android&logoColor=%23FFFFFF&label=Latest%20Release&color=%234500FF">
+    <img alt="Downloads (Overall)" src="https://img.shields.io/github/downloads/krvstek/rvx-apks/total?style=flat-square&logo=simpleanalytics&logoColor=%23FFFFFF&label=Downloads%20(Overall)&color=%234500FF">
+    <img alt="Downloads (Latest)" src="https://img.shields.io/github/downloads/krvstek/rvx-apks/latest/total?sort=semver&style=flat-square&logo=simpleanalytics&logoColor=%23FFFFFF&label=Downloads%20(Latest)&color=%234500FF">
 </p>
 
 ## ⭐ Overview
