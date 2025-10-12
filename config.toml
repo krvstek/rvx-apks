@@ -1,10 +1,6 @@
 parallel-jobs = 1
 compression-level = 9
 
-patches-source = "anddea/revanced-patches"
-cli-source = "inotia00/revanced-cli"
-rv-brand = "ReVanced Extended"
-
 [YouTube]
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
