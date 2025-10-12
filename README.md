@@ -21,8 +21,7 @@ Here you can download and use applications selected for this repository, which a
 - 🛑 **Ad-blocking**: blocks every kind of advertisement (who needs them?).
 - 🚀 **Extended functionality**: extracts more possibilities from the app.
 - ⭐ **Customization**: customize the application to your needs.
-- 📦 **Module support**: install & use YouTube without GmsCore (root only).
-- 💉 **Optimization**: optimized APKs / modules for size & faster usage.
+- 💉 **Optimization**: optimized APKs for size & faster usage.
 - 🔒 **Persistent**: patched app won't be updated or overwrited by Play Store.
 - ✨ **And much more!**
 
