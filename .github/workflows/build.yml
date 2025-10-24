@@ -2,10 +2,21 @@ name: Build APKs
 on:
   workflow_dispatch:
 
+permissions: write-all
+
 jobs:
   run:
-    permissions: write-all
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - id: "YouTube"
+          - id: "Music"
+          - id: "Reddit"
+          - id: "Spotify"
+          #- id: "X"
+
     steps:
       - uses: actions/setup-java@v5
         with:
@@ -18,28 +29,91 @@ jobs:
           fetch-depth: 0
           submodules: true
 
+      - name: Generate ${{ matrix.id }} config
+        run: |
+          ./extras.sh separate-config config.toml ${{ matrix.id }} sep_config.toml
+          cat sep_config.toml
+
       - name: Build APKs
-        run: if [ -f "config.json" ]; then ./build.sh config.json; else ./build.sh config.toml; fi
+        run: ./build.sh sep_config.toml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: $GITHUB_REPOSITORY
 
-      - name: Get output
+      - name: Upload APKs as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: apks-${{ matrix.id }}
+          path: ./build/*.apk
+          if-no-files-found: warn
+
+      - name: Upload build log as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-log-${{ matrix.id }}
+          path: build.md
+          if-no-files-found: warn
+
+  release:
+    needs: run
+    if: ${{ !cancelled() }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+      
+      - name: Check if any artifacts exist
+        id: check_artifacts
+        continue-on-error: true
+        run: |
+          if gh api repos/${{ github.repository }}/actions/runs/${{ github.run_id }}/artifacts --jq '.artifacts[] | select(.name | startswith("apks-")) | .name' | grep -q .; then
+            echo "has_artifacts=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_artifacts=false" >> $GITHUB_OUTPUT
+            exit 1
+          fi
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        
+      - name: Prepare version
+        if: steps.check_artifacts.outputs.has_artifacts == 'true'
+        id: version
+        run: echo "version=$(date +%y.%m.%d)" >> $GITHUB_OUTPUT
+
+      - name: Download all APKs
+        if: steps.check_artifacts.outputs.has_artifacts == 'true'
+        uses: actions/download-artifact@v4
+        with:
+          pattern: apks-*
+          path: all-apks
+          merge-multiple: true
+
+      - name: Download all build logs
+        if: steps.check_artifacts.outputs.has_artifacts == 'true'
+        uses: actions/download-artifact@v4
+        with:
+          pattern: build-log-*
+          path: build-logs
+
+      - name: Combine build logs
+        if: steps.check_artifacts.outputs.has_artifacts == 'true'
         id: get_output
         run: |
-          echo "DATE=$(date +%y.%m.%d)" >> "$GITHUB_OUTPUT"
           DELIM="$(openssl rand -hex 8)"
           echo "BUILD_LOG<<${DELIM}" >> "$GITHUB_OUTPUT"
-          cat build.md >> "$GITHUB_OUTPUT"
+          ./extras.sh combine-logs build-logs >> "$GITHUB_OUTPUT"
           echo "${DELIM}" >> "$GITHUB_OUTPUT"
 
       - name: Upload APKs to release
+        if: steps.check_artifacts.outputs.has_artifacts == 'true'
         uses: svenstaro/upload-release-action@v2
         with:
           body: ${{ steps.get_output.outputs.BUILD_LOG }}
           repo_token: ${{ secrets.GITHUB_TOKEN }}
-          file: ./build/*
-          release_name: ${{ steps.get_output.outputs.DATE }}
-          tag: ${{ steps.get_output.outputs.DATE }}
+          file: all-apks/*.apk
+          release_name: ${{ steps.version.outputs.version }}
+          tag: ${{ steps.version.outputs.version }}
           file_glob: true
           overwrite: true
