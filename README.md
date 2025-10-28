@@ -26,10 +26,10 @@
 
 ## ⚠️ Disclaimer
 
-This project is **not affiliated with ReVanced or any other patch creators mentioned in this repository**, and is intended for educational use only.  
-All applications and code **are completely safe**. If you have any concerns about security, you can always **build the applications yourself using the provided source code or with official patching methods**.  
-The build code was originally written by **[j-hc](https://github.com/j-hc)** and modified by me. All credits for the original implementation go to him.  
-Some builds may not work as expected due to **ongoing changes in the original apps or patches**. In such cases, please report the issue to patch creators or wait for an update - this repository only provides **pre-built APKs based on available patches**.  
+- This project is **not affiliated with ReVanced or any other patch creators mentioned in this repository**, and is intended for educational use only.  
+- All applications and code **are completely safe**. If you have any concerns about security, you can always **build the applications yourself using the provided source code or with official patching methods**.  
+- The build code was originally written by **[j-hc](https://github.com/j-hc)** and modified by me. All credits for the original implementation go to him.  
+- Some builds may not work as expected due to **ongoing changes in the original apps or patches**. In such cases, please report the issue to patch creators or wait for an update - this repository only provides **pre-built APKs based on available patches**.  
 
 ## 📜 Resources
 - [`Wiki`](https://github.com/anddea/revanced-patches/wiki)
