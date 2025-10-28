@@ -30,7 +30,7 @@ patcher-args = "-e 'Custom branding name for Spotify' -OappName='RVX Spotify'"
 [X]
 enabled = false
 uptodown-dlurl = "https://twitter.en.uptodown.com/android"
-apkmirror-dlurl = "https://www.apkmirror.com/apk/x-corp/twitter"
+apkmirror-dlurl = "https://apkmirror.com/apk/x-corp/twitter"
 patches-source = "crimera/piko"
 rv-brand = "Piko"
 included-patches = "'Change version code' 'Dynamic color'"
