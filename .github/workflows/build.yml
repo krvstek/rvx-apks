@@ -41,18 +41,20 @@ jobs:
           GITHUB_REPOSITORY: $GITHUB_REPOSITORY
 
       - name: Upload APKs as artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: apks-${{ matrix.id }}
           path: ./build/*.apk
           if-no-files-found: warn
+          retention-days: 1
 
       - name: Upload build log as artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: build-log-${{ matrix.id }}
           path: build.md
           if-no-files-found: warn
+          retention-days: 1
 
   release:
     needs: run
@@ -84,7 +86,7 @@ jobs:
 
       - name: Download all APKs
         if: steps.check_artifacts.outputs.has_artifacts == 'true'
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         with:
           pattern: apks-*
           path: all-apks
@@ -92,7 +94,7 @@ jobs:
 
       - name: Download all build logs
         if: steps.check_artifacts.outputs.has_artifacts == 'true'
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v6
         with:
           pattern: build-log-*
           path: build-logs
