@@ -25,6 +25,7 @@ dpi = "120-640dpi"
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
 included-patches = "'Custom theme'"
 patcher-args = "-e 'Custom branding name for Spotify' -OappName='RVX Spotify'"
+arch = "arm64-v8a"
 
 [X]
 enabled = false
