@@ -4,31 +4,31 @@ compression-level = 9
 [YouTube]
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
-included-patches = "'Custom branding name for YouTube' 'MaterialYou' 'Theme'"
-patcher-args = "-e 'Custom branding icon for YouTube' -OappIcon=mmt -e 'Overlay buttons' -OwiderButtonsSpace=true -e 'Snack bar components' -OdarkThemeBackgroundColor=@android:color/black -OlightThemeBackgroundColor=@android:color/white -OstrokeColor=?attr/ytChipBackground -e 'Visual preferences icons for YouTube' -OsettingsMenuIcon=revanced"
+#included-patches = "'Custom branding name for YouTube' 'MaterialYou' 'Theme'"
+patcher-args = "-e 'Overlay buttons' -OwiderButtonsSpace=true -e 'Snack bar components' -OdarkThemeBackgroundColor=@android:color/black -OlightThemeBackgroundColor=@android:color/white -OstrokeColor=?attr/ytChipBackground -e 'Visual preferences icons for YouTube' -OsettingsMenuIcon=revanced"
 version = "20.21.37"
 
 [Music]
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music"
-included-patches = "'Custom branding name for YouTube Music' 'Disable music video in album' 'Enable debug logging'"
-patcher-args = "-e 'Custom branding icon for YouTube Music' -OappIcon=mmt -e 'Visual preferences icons for YouTube Music' -OsettingsMenuIcon=revanced"
+#included-patches = "'Custom branding name for YouTube Music' 'Disable music video in album' 'Enable debug logging'"
+patcher-args = "-e 'Visual preferences icons for YouTube Music' -OsettingsMenuIcon=revanced"
 arch = "both"
 
 [Reddit]
 uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit"
-patcher-args = "-e 'Custom branding name for Reddit' -OappName='RVX Reddit'"
+#patcher-args = "-e 'Custom branding name for Reddit' -OappName='RVX Reddit'"
 dpi = "120-640dpi"
 
 [Spotify]
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
 included-patches = "'Custom theme'"
-patcher-args = "-e 'Custom branding name for Spotify' -OappName='RVX Spotify'"
+#patcher-args = "-e 'Custom branding name for Spotify' -OappName='RVX Spotify'"
 arch = "arm64-v8a"
 
 [X]
-enabled = false
+enabled = true
 uptodown-dlurl = "https://twitter.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/x-corp/twitter"
 patches-source = "crimera/piko"
