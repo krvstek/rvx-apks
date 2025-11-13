@@ -489,6 +489,13 @@ build_rv() {
 		p_patcher_args=("${p_patcher_args[@]//-[ei] ${microg_patch}/}")
 	fi
 
+	local version_code_patch
+    version_code_patch=$(grep "^Name: " <<<"$list_patches" | grep -i "change version code" || :) version_code_patch=${version_code_patch#*: }
+    if [ -n "$version_code_patch" ] && [[ ${p_patcher_args[*]} =~ $version_code_patch ]]; then
+        epr "You cant include/exclude version code patch as that's done by rvmm builder automatically."
+        p_patcher_args=("${p_patcher_args[@]//-[ei] ${version_code_patch}/}")
+    fi
+
 	local patcher_args patched_apk
 	local rv_brand_f=${args[rv_brand],,}
 	rv_brand_f=${rv_brand_f// /-}
@@ -498,6 +505,9 @@ build_rv() {
 	if [ -n "$microg_patch" ]; then
 		patcher_args+=("-e \"${microg_patch}\"")
 	fi
+	if [ -n "$version_code_patch" ]; then
+        patcher_args+=("-e \"${version_code_patch}\"")
+    fi
 	patched_apk="${TEMP_DIR}/${app_name_l}-${rv_brand_f}-${version_f}-${arch_f}.apk"
     if [ "${args[riplib]}" = true ]; then
     	patcher_args+=("--rip-lib x86_64 --rip-lib x86")
