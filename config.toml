@@ -28,7 +28,6 @@ patcher-args = "-e 'Custom branding name for Spotify' -OappName='RVX Spotify'"
 arch = "arm64-v8a"
 
 [X]
-enabled = false
 uptodown-dlurl = "https://twitter.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/x-corp/twitter"
 patches-source = "crimera/piko"

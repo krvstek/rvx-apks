@@ -56,7 +56,13 @@ for table_name in $(toml_get_table_names); do
 
 	declare -A app_args
 	patches_src=$(toml_get "$t" patches-source) || patches_src=$DEF_PATCHES_SRC
-	patches_ver=$(toml_get "$t" patches-version) || patches_ver=$DEF_PATCHES_VER
+
+	if [ "${BUILD_MODE:-}" = "dev" ]; then
+        patches_ver="dev"
+    else
+        patches_ver=$(toml_get "$t" patches-version) || patches_ver=$DEF_PATCHES_VER
+    fi
+	
 	cli_src=$(toml_get "$t" cli-source) || cli_src=$DEF_CLI_SRC
 	cli_ver=$(toml_get "$t" cli-version) || cli_ver=$DEF_CLI_VER
 

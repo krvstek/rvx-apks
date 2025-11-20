@@ -2,8 +2,7 @@
     <img src="https://readme-typing-svg.demolab.com?font=Google+Sans&size=25&pause=1000&color=4500FF&center=true&vCenter=true&random=false&width=435&lines=%F0%9F%93%A6+ReVanced's+pre-made+APKs"><br>
     <img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/krvstek/rvx-apks/build.yml?style=flat-square&logo=githubactions&logoColor=%23FFFFFF&label=Build%20Status&color=%234500FF">
     <img alt="Latest Release" src="https://img.shields.io/github/release-date/krvstek/rvx-apks?display_date=created_at&style=flat-square&logo=android&logoColor=%23FFFFFF&label=Latest%20Release&color=%234500FF">
-    <img alt="Downloads (Overall)" src="https://img.shields.io/github/downloads/krvstek/rvx-apks/total?style=flat-square&logo=simpleanalytics&logoColor=%23FFFFFF&label=Overall&color=%234500FF">
-    <img alt="Downloads (Latest)" src="https://img.shields.io/github/downloads/krvstek/rvx-apks/latest/total?sort=semver&style=flat-square&logo=simpleanalytics&logoColor=%23FFFFFF&label=Latest&color=%234500FF">
+    <img alt="Downloads" src="https://img.shields.io/github/downloads/krvstek/rvx-apks/total?style=flat-square&logo=simpleanalytics&logoColor=%23FFFFFF&label=Downloads&color=%234500FF">
 </h1>
 
 <p align="center">Here you can download and use applications selected for this repository, which are modified and extended with many functionalities that will certainly be useful to you.</p>

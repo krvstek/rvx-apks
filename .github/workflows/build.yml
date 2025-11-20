@@ -1,6 +1,15 @@
 name: Build APKs
 on:
   workflow_dispatch:
+    inputs:
+      build_mode:
+        description: 'Select build mode'
+        required: true
+        default: 'stable'
+        type: choice
+        options:
+          - stable
+          - dev
 
 permissions: write-all
 
@@ -15,7 +24,7 @@ jobs:
           - id: "Music"
           - id: "Reddit"
           - id: "Spotify"
-          #- id: "X"
+          - id: "X"
           - id: "Duolingo"
 
     steps:
@@ -38,6 +47,7 @@ jobs:
       - name: Build APKs
         run: ./build.sh sep_config.toml
         env:
+          BUILD_MODE: ${{ inputs.build_mode }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           GITHUB_REPOSITORY: $GITHUB_REPOSITORY
 
@@ -83,7 +93,12 @@ jobs:
       - name: Prepare version
         if: steps.check_artifacts.outputs.has_artifacts == 'true'
         id: version
-        run: echo "version=$(date +%y.%m.%d)" >> $GITHUB_OUTPUT
+        run: |
+          VER=$(date +%y.%m.%d)
+          if [ "${{ inputs.build_mode }}" == "dev" ]; then
+            VER="${VER}-dev"
+          fi
+          echo "version=${VER}" >> $GITHUB_OUTPUT
 
       - name: Download all APKs
         if: steps.check_artifacts.outputs.has_artifacts == 'true'
@@ -118,5 +133,6 @@ jobs:
           file: all-apks/*.apk
           release_name: ${{ steps.version.outputs.version }}
           tag: ${{ steps.version.outputs.version }}
+          prerelease: ${{ inputs.build_mode == 'dev' }}
           file_glob: true
           overwrite: true
