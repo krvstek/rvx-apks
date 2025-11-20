@@ -96,7 +96,7 @@ jobs:
         run: |
           VER=$(date +%y.%m.%d)
           if [ "${{ inputs.build_mode }}" == "dev" ]; then
-            VER="${VER}-dev"
+            VER="${VER}-pre"
           fi
           echo "version=${VER}" >> $GITHUB_OUTPUT
 
