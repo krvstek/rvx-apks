@@ -1,8 +1,19 @@
 <h1 align="center">
-    <img src="https://readme-typing-svg.demolab.com?font=Google+Sans&size=25&pause=1000&color=4500FF&center=true&vCenter=true&random=false&width=435&lines=%F0%9F%93%A6+ReVanced's+pre-made+APKs"><br>
-    <img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/krvstek/rvx-apks/build.yml?style=flat-square&logo=githubactions&logoColor=%23FFFFFF&label=Build%20Status&color=%234500FF">
-    <img alt="Latest Release" src="https://img.shields.io/github/release-date/krvstek/rvx-apks?display_date=created_at&style=flat-square&logo=android&logoColor=%23FFFFFF&label=Latest%20Release&color=%234500FF">
-    <img alt="Downloads" src="https://img.shields.io/github/downloads/krvstek/rvx-apks/total?style=flat-square&logo=simpleanalytics&logoColor=%23FFFFFF&label=Downloads&color=%234500FF">
+    <a href="#-features">
+        <img src="https://readme-typing-svg.demolab.com?font=Google+Sans&size=25&pause=1000&color=4500FF&center=true&vCenter=true&random=false&width=435&lines=%F0%9F%93%A6+ReVanced's+pre-made+APKs">
+    </a><br>
+    <a href="https://github.com/krvstek/rvx-apks/actions/workflows/build.yml">
+        <img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/krvstek/rvx-apks/build.yml?style=flat-square&logo=githubactions&logoColor=%23FFFFFF&label=Build%20Status&color=%234500FF">
+    </a>
+    <a href="https://github.com/krvstek/rvx-apks/releases/latest">
+        <img alt="Release" src="https://img.shields.io/github/release-date/krvstek/rvx-apks?display_date=created_at&style=flat-square&logo=android&logoColor=%23FFFFFF&label=Release&color=%234500FF">
+    </a>
+    <a href="https://github.com/krvstek/rvx-apks/releases">
+        <img alt="Pre-release" src="https://img.shields.io/github/release-date-pre/krvstek/rvx-apks?display_date=created_at&style=flat-square&logo=androidstudio&logoColor=%23FFFFFF&label=Pre-release&color=%234500FF">
+    </a>
+    <a href="#-list-of-apps-in-this-repository">
+        <img alt="Downloads" src="https://img.shields.io/github/downloads/krvstek/rvx-apks/total?style=flat-square&logo=simpleanalytics&logoColor=%23FFFFFF&label=Downloads&color=%234500FF">
+    </a>
 </h1>
 
 <p align="center">Here you can download and use applications selected for this repository, which are modified and extended with many functionalities that will certainly be useful to you.</p>
