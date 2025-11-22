@@ -1,5 +1,4 @@
 parallel-jobs = 1
-compression-level = 9
 
 [YouTube]
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
