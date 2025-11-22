@@ -34,12 +34,3 @@ patches-source = "crimera/piko"
 rv-brand = "Piko"
 included-patches = "'Dynamic color'"
 dpi = "120-640dpi"
-
-[Duolingo]
-uptodown-dlurl = "https://duolingo.en.uptodown.com/android"
-apkmirror-dlurl = "https://apkmirror.com/apk/duolingo/duolingo-duolingo"
-patches-source = "revanced/revanced-patches"
-cli-source = "j-hc/revanced-cli"
-rv-brand = "ReVanced"
-included-patches = "'Enable debug menu'"
-dpi = "120-640dpi"

@@ -25,7 +25,6 @@ jobs:
           - id: "Reddit"
           - id: "Spotify"
           - id: "X"
-          - id: "Duolingo"
 
     steps:
       - uses: actions/setup-java@v5
