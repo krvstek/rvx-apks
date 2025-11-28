@@ -40,6 +40,33 @@ abort() {
 	exit 1
 }
 
+install_pkg() {
+    local cmd=$1
+    local pkg=${2:-$1} 
+    if command -v "$cmd" >/dev/null 2>&1; then
+        return 0
+    fi
+    pr "Installing $pkg..."
+    
+    if command -v pkg >/dev/null 2>&1; then
+        pkg install -y "$pkg"
+    elif command -v apt-get >/dev/null 2>&1; then
+        sudo apt-get install -y "$pkg"
+    elif command -v dnf >/dev/null 2>&1; then
+        sudo dnf install -y "$pkg"
+    elif command -v yum >/dev/null 2>&1; then
+        sudo yum install -y "$pkg"
+    elif command -v pacman >/dev/null 2>&1; then
+        sudo pacman -S --noconfirm "$pkg"
+    elif command -v apk >/dev/null 2>&1; then
+        sudo apk add "$pkg"
+    else
+        abort "Cannot auto-install $pkg. Please install it manually."
+    fi
+
+    command -v "$cmd" >/dev/null 2>&1 || abort "Failed to install $pkg"
+}
+
 get_rv_prebuilts() {
 	local cli_src=$1 cli_ver=$2 patches_src=$3 patches_ver=$4
 	pr "Getting prebuilts (${patches_src%/*})" >&2

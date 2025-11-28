@@ -11,9 +11,26 @@ fi
 
 source utils.sh
 
-jq --version >/dev/null || abort "\`jq\` is not installed. install it with 'apt-get install jq' or equivalent"
-java --version >/dev/null || abort "\`java\` is not installed. install it with 'apt-get install temurin-21-jdk' or equivalent"
-zip --version >/dev/null || abort "\`zip\` is not installed. install it with 'apt-get install zip' or equivalent"
+if [ "$OS" = Android ]; then
+    if ! [ -d "$HOME/storage" ]; then
+        pr "Requesting Termux storage permission..."
+        pr "Please allow storage access in the popup"
+      	sleep 5
+      	termux-setup-storage
+    fi
+    OUTPUT_DIR="/sdcard/Download/rvx-output"
+    mkdir -p "$OUTPUT_DIR"
+else
+    OUTPUT_DIR="$BUILD_DIR"
+fi
+
+install_pkg jq
+if [ "$OS" = Android ]; then
+    install_pkg java openjdk-17
+else
+    install_pkg java openjdk-21-jdk
+fi
+install_pkg zip
 
 set_prebuilts
 
@@ -135,6 +152,17 @@ done
 wait
 rm -rf temp/tmp.*
 if [ -z "$(ls -A1 "${BUILD_DIR}")" ]; then abort "All builds failed."; fi
+
+if [ "$OS" = Android ]; then
+    pr "Moving outputs to /sdcard/Download/rvx-output"
+    for apk in "${BUILD_DIR}"/*; do
+        if [ -f "$apk" ]; then
+            mv -f "$apk" "$OUTPUT_DIR/"
+            pr "$(basename "$apk")"
+        fi
+    done
+    am start -a android.intent.action.VIEW -d "file:///sdcard/Download/rvx-output" -t resource/folder >/dev/null 2>&1 || :
+fi
 
 log "\n- ▶️ » Install [MicroG-RE](https://github.com/WSTxda/MicroG-RE/releases) for YouTube and YT Music APKs\n"
 log "$(cat "$TEMP_DIR"/*-rv/changelog.md)"
