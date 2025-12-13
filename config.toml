@@ -12,16 +12,18 @@ patcher-args = "-e 'Custom branding icon for YouTube' -OappIcon=mmt -e 'Overlay 
 version= "20.21.37"
 
 [Music]
-uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
+uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 included-patches = "'Custom branding name for YouTube Music' 'Disable music video in album' 'Enable debug logging'"
 patcher-args = "-e 'Custom branding icon for YouTube Music' -OappIcon=mmt -e 'Visual preferences icons for YouTube Music' -OsettingsMenuIcon=revanced"
+arch = "arm64-v8a"
 
 [Reddit]
 uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit"
 patcher-args = "-e 'Custom branding name for Reddit' -OappName='RVX Reddit'"
-dpi = "320-480dpi"
+dpi = "120-640dpi"
 
 [Spotify]
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
