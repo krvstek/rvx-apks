@@ -282,11 +282,14 @@ dl_apkmirror() {
 		resp=$(req "$url" -) || return 1
 		node=$($HTMLQ "div.table-row.headerFont:nth-last-child(1)" -r "span:nth-child(n+3)" <<<"$resp")
 		if [ "$node" ]; then
-			if ! dlurl=$(apk_mirror_search "$resp" "$dpi" "${arch}" "APK"); then
-				if ! dlurl=$(apk_mirror_search "$resp" "$dpi" "${arch}" "BUNDLE"); then
-					return 1
-				else is_bundle=true; fi
-			fi
+			for current_dpi in $dpi; do
+				for type in APK BUNDLE; do
+					if dlurl=$(apk_mirror_search "$resp" "$current_dpi" "${arch}" "$type"); then
+						[[ "$type" == "BUNDLE" ]] && is_bundle=true || is_bundle=false
+						break 2
+					fi
+				done
+			done
 			[ -z "$dlurl" ] && return 1
 			resp=$(req "$dlurl" -)
 		fi

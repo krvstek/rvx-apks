@@ -17,7 +17,6 @@ arch = "both"
 uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit"
 patcher-args = "-e 'Custom branding name for Reddit' -OappName='RVX Reddit'"
-dpi = "120-640dpi"
 
 [Spotify]
 uptodown-dlurl = "https://spotify.en.uptodown.com/android"
@@ -31,4 +30,3 @@ apkmirror-dlurl = "https://apkmirror.com/apk/x-corp/twitter"
 patches-source = "crimera/piko"
 rv-brand = "Piko"
 included-patches = "'Dynamic color'"
-dpi = "120-640dpi"

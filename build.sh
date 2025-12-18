@@ -47,6 +47,7 @@ DEF_CLI_VER=$(toml_get "$main_config_t" cli-version) || DEF_CLI_VER="latest"
 DEF_PATCHES_SRC=$(toml_get "$main_config_t" patches-source) || DEF_PATCHES_SRC="anddea/revanced-patches"
 DEF_CLI_SRC=$(toml_get "$main_config_t" cli-source) || DEF_CLI_SRC="inotia00/revanced-cli"
 DEF_RV_BRAND=$(toml_get "$main_config_t" rv-brand) || DEF_RV_BRAND="ReVanced Extended"
+DEF_DPI_LIST=$(toml_get "$main_config_t" dpi) || DEF_DPI_LIST="nodpi anydpi 120-640dpi"
 mkdir -p "$TEMP_DIR" "$BUILD_DIR"
 
 : >build.md
@@ -127,7 +128,7 @@ for table_name in $(toml_get_table_names); do
 		abort "wrong arch '${app_args[arch]}' for '$table_name'"
 	fi
 
-	app_args[dpi]=$(toml_get "$t" dpi) || app_args[dpi]="nodpi"
+	app_args[dpi]=$(toml_get "$t" dpi) || app_args[dpi]="$DEF_DPI_LIST"
 	table_name_f=${table_name,,}
 	table_name_f=${table_name_f// /-}
 
