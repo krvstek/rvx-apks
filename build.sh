@@ -11,9 +11,26 @@ fi
 
 source utils.sh
 
-jq --version >/dev/null || abort "\`jq\` is not installed. install it with 'apt-get install jq' or equivalent"
-java --version >/dev/null || abort "\`java\` is not installed. install it with 'apt-get install temurin-21-jdk' or equivalent"
-zip --version >/dev/null || abort "\`zip\` is not installed. install it with 'apt-get install zip' or equivalent"
+if [ "$OS" = Android ]; then
+    if ! [ -d "$HOME/storage" ]; then
+        pr "Requesting Termux storage permission..."
+        pr "Please allow storage access in the popup"
+      	sleep 5
+      	termux-setup-storage
+    fi
+    OUTPUT_DIR="/sdcard/Download/rvx-output"
+    mkdir -p "$OUTPUT_DIR"
+else
+    OUTPUT_DIR="$BUILD_DIR"
+fi
+
+install_pkg jq
+if [ "$OS" = Android ]; then
+    install_pkg java openjdk-17
+else
+    install_pkg java openjdk-21-jdk
+fi
+install_pkg zip
 
 set_prebuilts
 
@@ -22,20 +39,18 @@ vtf() { if ! isoneof "${1}" "true" "false"; then abort "ERROR: '${1}' is not a v
 # -- Main config --
 toml_prep "${1:-config.toml}" || abort "could not find config file '${1:-config.toml}'\n\tUsage: $0 <config.toml>"
 main_config_t=$(toml_get_table_main)
-COMPRESSION_LEVEL=$(toml_get "$main_config_t" compression-level) || COMPRESSION_LEVEL="9"
 if ! PARALLEL_JOBS=$(toml_get "$main_config_t" parallel-jobs); then
 	if [ "$OS" = Android ]; then PARALLEL_JOBS=1; else PARALLEL_JOBS=$(nproc); fi
 fi
-REMOVE_RV_INTEGRATIONS_CHECKS=$(toml_get "$main_config_t" remove-rv-integrations-checks) || REMOVE_RV_INTEGRATIONS_CHECKS="true"
 DEF_PATCHES_VER=$(toml_get "$main_config_t" patches-version) || DEF_PATCHES_VER="latest"
 DEF_CLI_VER=$(toml_get "$main_config_t" cli-version) || DEF_CLI_VER="latest"
 DEF_PATCHES_SRC=$(toml_get "$main_config_t" patches-source) || DEF_PATCHES_SRC="anddea/revanced-patches"
 DEF_CLI_SRC=$(toml_get "$main_config_t" cli-source) || DEF_CLI_SRC="inotia00/revanced-cli"
 DEF_RV_BRAND=$(toml_get "$main_config_t" rv-brand) || DEF_RV_BRAND="ReVanced Extended"
+DEF_DPI_LIST=$(toml_get "$main_config_t" dpi) || DEF_DPI_LIST="nodpi anydpi 120-640dpi"
 mkdir -p "$TEMP_DIR" "$BUILD_DIR"
 
 : >build.md
-if ((COMPRESSION_LEVEL > 9)) || ((COMPRESSION_LEVEL < 0)); then abort "compression-level must be within 0-9"; fi
 
 if [ "$(echo "$TEMP_DIR"/*-rv/changelog.md)" ]; then
 	: >"$TEMP_DIR"/*-rv/changelog.md || :
@@ -56,7 +71,13 @@ for table_name in $(toml_get_table_names); do
 
 	declare -A app_args
 	patches_src=$(toml_get "$t" patches-source) || patches_src=$DEF_PATCHES_SRC
-	patches_ver=$(toml_get "$t" patches-version) || patches_ver=$DEF_PATCHES_VER
+
+	if [ "${BUILD_MODE:-}" = "dev" ]; then
+        patches_ver="dev"
+    else
+        patches_ver=$(toml_get "$t" patches-version) || patches_ver=$DEF_PATCHES_VER
+    fi
+	
 	cli_src=$(toml_get "$t" cli-source) || cli_src=$DEF_CLI_SRC
 	cli_ver=$(toml_get "$t" cli-version) || cli_ver=$DEF_CLI_VER
 
@@ -107,7 +128,7 @@ for table_name in $(toml_get_table_names); do
 		abort "wrong arch '${app_args[arch]}' for '$table_name'"
 	fi
 
-	app_args[dpi]=$(toml_get "$t" dpi) || app_args[dpi]="nodpi"
+	app_args[dpi]=$(toml_get "$t" dpi) || app_args[dpi]="$DEF_DPI_LIST"
 	table_name_f=${table_name,,}
 	table_name_f=${table_name_f// /-}
 
@@ -132,6 +153,17 @@ done
 wait
 rm -rf temp/tmp.*
 if [ -z "$(ls -A1 "${BUILD_DIR}")" ]; then abort "All builds failed."; fi
+
+if [ "$OS" = Android ]; then
+    pr "Moving outputs to /sdcard/Download/rvx-output"
+    for apk in "${BUILD_DIR}"/*; do
+        if [ -f "$apk" ]; then
+            mv -f "$apk" "$OUTPUT_DIR/"
+            pr "$(basename "$apk")"
+        fi
+    done
+    am start -a android.intent.action.VIEW -d "file:///sdcard/Download/rvx-output" -t resource/folder >/dev/null 2>&1 || :
+fi
 
 log "\n- ▶️ » Install [MicroG-RE](https://github.com/WSTxda/MicroG-RE/releases) for YouTube and YT Music APKs\n"
 log "$(cat "$TEMP_DIR"/*-rv/changelog.md)"

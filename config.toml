@@ -1,5 +1,4 @@
 parallel-jobs = 1
-compression-level = 9
 
 [YouTube]
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
@@ -28,19 +27,8 @@ included-patches = "'Custom theme'"
 arch = "arm64-v8a"
 
 [X]
-enabled = true
 uptodown-dlurl = "https://twitter.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/x-corp/twitter"
 patches-source = "crimera/piko"
-rv-brand = "Piko"
+#rv-brand = "Piko"
 included-patches = "'Dynamic color'"
-dpi = "120-640dpi"
-
-[Duolingo]
-uptodown-dlurl = "https://duolingo.en.uptodown.com/android"
-apkmirror-dlurl = "https://apkmirror.com/apk/duolingo/duolingo-duolingo"
-patches-source = "revanced/revanced-patches"
-cli-source = "j-hc/revanced-cli"
-rv-brand = "ReVanced"
-included-patches = "'Enable debug menu'"
-dpi = "120-640dpi"

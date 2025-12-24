@@ -1,9 +1,19 @@
 <h1 align="center">
-    <img src="https://readme-typing-svg.demolab.com?font=Google+Sans&size=25&pause=1000&color=4500FF&center=true&vCenter=true&random=false&width=435&lines=%F0%9F%93%A6+ReVanced's+pre-made+APKs"><br>
-    <img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/krvstek/rvx-apks/build.yml?style=flat-square&logo=githubactions&logoColor=%23FFFFFF&label=Build%20Status&color=%234500FF">
-    <img alt="Latest Release" src="https://img.shields.io/github/release-date/krvstek/rvx-apks?display_date=created_at&style=flat-square&logo=android&logoColor=%23FFFFFF&label=Latest%20Release&color=%234500FF">
-    <img alt="Downloads (Overall)" src="https://img.shields.io/github/downloads/krvstek/rvx-apks/total?style=flat-square&logo=simpleanalytics&logoColor=%23FFFFFF&label=Overall&color=%234500FF">
-    <img alt="Downloads (Latest)" src="https://img.shields.io/github/downloads/krvstek/rvx-apks/latest/total?sort=semver&style=flat-square&logo=simpleanalytics&logoColor=%23FFFFFF&label=Latest&color=%234500FF">
+    <a href="#-features">
+        <img src="https://readme-typing-svg.demolab.com?font=Google+Sans&size=25&pause=1000&color=4500FF&center=true&vCenter=true&random=false&width=435&lines=%F0%9F%93%A6+ReVanced's+pre-made+APKs">
+    </a><br>
+    <a href="https://github.com/krvstek/rvx-apks/actions/workflows/build.yml">
+        <img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/krvstek/rvx-apks/build.yml?style=flat-square&logo=githubactions&logoColor=%23FFFFFF&label=Build%20Status&color=%234500FF">
+    </a>
+    <a href="https://github.com/krvstek/rvx-apks/releases/latest">
+        <img alt="Release" src="https://img.shields.io/github/release-date/krvstek/rvx-apks?display_date=created_at&style=flat-square&logo=android&logoColor=%23FFFFFF&label=Release&color=%234500FF">
+    </a>
+    <a href="https://github.com/krvstek/rvx-apks/releases">
+        <img alt="Pre-release" src="https://img.shields.io/github/release-date-pre/krvstek/rvx-apks?display_date=created_at&style=flat-square&logo=androidstudio&logoColor=%23FFFFFF&label=Pre-release&color=%234500FF">
+    </a>
+    <a href="#-list-of-apps-in-this-repository">
+        <img alt="Downloads" src="https://img.shields.io/github/downloads/krvstek/rvx-apks/total?style=flat-square&logo=simpleanalytics&logoColor=%23FFFFFF&label=Downloads&color=%234500FF">
+    </a>
 </h1>
 
 <p align="center">Here you can download and use applications selected for this repository, which are modified and extended with many functionalities that will certainly be useful to you.</p>
@@ -27,7 +37,6 @@
 | <picture><img src="https://play-lh.googleusercontent.com/NaFAbO7ExS4NRAvt2GYkNY6OQf9oVXwmdMTZzA6zrgjjSxhQuTCnjHyf7TgYcoSGqQ=s48-rw" width="20" height="20"></picture> [`Reddit`](https://play.google.com/store/apps/details?id=com.reddit.frontpage) | `com.reddit.frontpage` | [`ReVanced Extended`](https://github.com/anddea/revanced-patches) |
 | <picture><img src="https://play-lh.googleusercontent.com/7ynvVIRdhJNAngCg_GI7i8TtH8BqkJYmffeUHsG-mJOdzt1XLvGmbsKuc5Q1SInBjDKN=s48-rw" width="20" height="20"></picture> [`Spotify`](https://play.google.com/store/apps/details?id=com.spotify.music) | `com.spotify.music` | [`ReVanced Extended`](https://github.com/anddea/revanced-patches) |
 | <picture><img src="https://play-lh.googleusercontent.com/XyI6Hyz9AFg7E_joVzX2zh6CpWm9B2DG2JuEz5meCFVm4-wTKTnHgqbmg62iFKe4Gzca=s48-rw" width="20" height="20"></picture> [`X`](https://play.google.com/store/apps/details?id=com.twitter.android) | `com.twitter.android` | [`Piko`](https://github.com/crimera/piko) |
-| <picture><img src="https://play-lh.googleusercontent.com/tw_coGKgk1K_zO-Ypf9zBKV1s-KT3dYN1MIUxIqtnbfmON5x_YmuoAr31gE4oSfJHNtA-aStTd-qe9R8S6NVyA=s48-rw" width="20" height="20"></picture> [`Duolingo`](https://play.google.com/store/apps/details?id=com.duolingo) | `com.duolingo` | [`ReVanced`](https://github.com/revanced/revanced-patches) |
 
 ## ⚠️ Disclaimer
 
