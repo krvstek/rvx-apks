@@ -9,7 +9,7 @@ body:
         Rules:
 
         - Speak English only.
-        - Do not submit a ReVanced stuff like patch bugs or something unrelated to this repo.
+        - Do not submit a RVX stuff like patch bugs or something unrelated to this repo.
         - Do not submit a duplicate bug report.
   - type: textarea
     attributes:

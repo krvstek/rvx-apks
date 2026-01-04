@@ -9,7 +9,7 @@ body:
         Rules:
 
         - Speak English only.
-        - Do not submit a ReVanced stuff like patch features.
+        - Do not submit a RVX stuff like patch features.
         - Do not submit a duplicate suggestion.
   - type: textarea
     attributes:
