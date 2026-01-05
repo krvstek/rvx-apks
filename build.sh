@@ -52,9 +52,9 @@ mkdir -p "$TEMP_DIR" "$BUILD_DIR"
 
 : >build.md
 
-if [ "$(echo "$TEMP_DIR"/*-rv/changelog.md)" ]; then
-	: >"$TEMP_DIR"/*-rv/changelog.md || :
-fi
+for file in "$TEMP_DIR"/*/changelog.md; do
+    [ -f "$file" ] && : > "$file"
+done
 
 declare -A cliriplib
 idx=0
@@ -81,12 +81,12 @@ for table_name in $(toml_get_table_names); do
 	cli_src=$(toml_get "$t" cli-source) || cli_src=$DEF_CLI_SRC
 	cli_ver=$(toml_get "$t" cli-version) || cli_ver=$DEF_CLI_VER
 
-	if ! RVP="$(get_rv_prebuilts "$cli_src" "$cli_ver" "$patches_src" "$patches_ver")"; then
-		abort "could not download rv prebuilts"
+	if ! PREBUILTS="$(get_prebuilts "$cli_src" "$cli_ver" "$patches_src" "$patches_ver")"; then
+		abort "could not download prebuilts"
 	fi
-	read -r rv_cli_jar rv_patches_jar <<<"$RVP"
-	app_args[cli]=$rv_cli_jar
-	app_args[ptjar]=$rv_patches_jar
+	read -r cli_jar patches_jar <<<"$PREBUILTS"
+	app_args[cli]=$cli_jar
+	app_args[ptjar]=$patches_jar
 	if [[ -v cliriplib[${app_args[cli]}] ]]; then app_args[riplib]=${cliriplib[${app_args[cli]}]}; else
 		if [[ $(java -jar "${app_args[cli]}" patch 2>&1) == *rip-lib* ]]; then
 			cliriplib[${app_args[cli]}]=true
@@ -166,7 +166,7 @@ if [ "$OS" = Android ]; then
 fi
 
 log "\n- ▶️ » Install [MicroG-RE](https://github.com/MorpheApp/MicroG-RE/releases) for YouTube and YT Music APKs\n"
-log "$(cat "$TEMP_DIR"/*-rv/changelog.md)"
+log "$(cat "$TEMP_DIR"/*/changelog.md)"
 
 SKIPPED=$(cat "$TEMP_DIR"/skipped 2>/dev/null || :)
 if [ -n "$SKIPPED" ]; then
