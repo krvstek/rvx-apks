@@ -19,12 +19,6 @@ uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit"
 patcher-args = "-e 'Custom branding name for Reddit' -OappName='RVX Reddit'"
 
-[Spotify]
-uptodown-dlurl = "https://spotify.en.uptodown.com/android"
-included-patches = "'Custom theme'"
-patcher-args = "-e 'Custom branding name for Spotify' -OappName='RVX Spotify'"
-arch = "arm64-v8a"
-
 [X]
 uptodown-dlurl = "https://twitter.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/x-corp/twitter"

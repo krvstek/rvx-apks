@@ -23,7 +23,6 @@ jobs:
           - id: "YouTube"
           - id: "Music"
           - id: "Reddit"
-          - id: "Spotify"
           - id: "X"
 
     steps:
