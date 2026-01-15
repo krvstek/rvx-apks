@@ -41,34 +41,35 @@ case "$command" in
     # Usage: ./extras.sh combine-logs <build-logs-dir>
     
     build_logs_dir="${2:-build-logs}"
+    
+    log_files=()
+    while IFS= read -r -d '' log; do
+      log_files+=("$log")
+    done < <(find "$build_logs_dir" -name "build.md" -type f -print0 2>/dev/null || true)
 
-    for log in "$build_logs_dir"/build-log-*/build.md; do
-      if [ -f "$log" ]; then
-        grep "^🟢" "$log" 2>/dev/null || true
-      fi
+    for log in "${log_files[@]}"; do
+      grep "^🟢" "$log" 2>/dev/null || true
     done
     echo ""
 
-    for log in "$build_logs_dir"/build-log-*/build.md; do
-      if [ -f "$log" ]; then
-        if grep -q "MicroG" "$log"; then
-          grep -A 1 "^-.*MicroG" "$log" 2>/dev/null || true
-          echo ""
-          break
-        fi
+    for log in "${log_files[@]}"; do
+      if grep -q "MicroG" "$log" 2>/dev/null; then
+        grep -A 1 "^-.*MicroG" "$log" 2>/dev/null || true
+        echo ""
+        break
       fi
     done
 
     temp_file=$(mktemp)
     trap 'rm -f "$temp_file"' EXIT
     
-    for log in "$build_logs_dir"/build-log-*/build.md; do
-      if [ -f "$log" ]; then
-        awk '/^>.*CLI:/{p=1} p{print} /^\[.*Changelog\]/{print ""; p=0}' "$log" >> "$temp_file" 2>/dev/null || true
-      fi
+    for log in "${log_files[@]}"; do
+      awk '/^>.*CLI:/{p=1} p{print} /^\[.*Changelog\]/{print ""; p=0}' "$log" 2>/dev/null >> "$temp_file" || true
     done
 
-    awk '!seen[$0]++' "$temp_file"
+    if [ -s "$temp_file" ]; then
+      awk '!seen[$0]++' "$temp_file"
+    fi
     ;;
 
   *)
