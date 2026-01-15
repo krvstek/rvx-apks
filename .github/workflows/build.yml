@@ -17,6 +17,7 @@ on:
         type: choice
         options:
           - rvx
+          - morphe
           - piko
 
 permissions: write-all
@@ -33,6 +34,9 @@ jobs:
           case "${{ inputs.patch_source }}" in
             rvx)
               echo 'matrix={"include":[{"id":"YouTube"},{"id":"Music"},{"id":"Reddit"}]}' >> $GITHUB_OUTPUT
+              ;;
+            morphe)
+              echo 'matrix={"include":[{"id":"YouTube-Morphe"},{"id":"Music-Morphe"}]}' >> $GITHUB_OUTPUT
               ;;
             piko)
               echo 'matrix={"include":[{"id":"X"}]}' >> $GITHUB_OUTPUT

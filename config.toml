@@ -20,6 +20,24 @@ uptodown-dlurl = "https://reddit-official-app.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/redditinc/reddit"
 patcher-args = "-e 'Custom branding name for Reddit' -OappName='RVX Reddit'"
 
+# Morphe
+[YouTube-Morphe]
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
+patches-source = "MorpheApp/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+app-name = "YouTube"
+rv-brand = "Morphe"
+
+[Music-Morphe]
+uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music"
+patches-source = "MorpheApp/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+app-name = "Music"
+rv-brand = "Morphe"
+arch = "both"
+
 # Piko
 [X]
 uptodown-dlurl = "https://twitter.en.uptodown.com/android"
