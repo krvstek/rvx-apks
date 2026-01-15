@@ -45,7 +45,7 @@ case "$command" in
     log_files=()
     while IFS= read -r -d '' log; do
       log_files+=("$log")
-    done < <(find "$build_logs_dir" -name "build.md" -type f -print0 2>/dev/null || true)
+    done < <(find "$build_logs_dir" -name "build.md" -type f -print0 2>/dev/null | sort -z || true)
 
     for log in "${log_files[@]}"; do
       grep "^🟢" "$log" 2>/dev/null || true
