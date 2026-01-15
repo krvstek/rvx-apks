@@ -10,20 +10,41 @@ on:
         options:
           - stable
           - dev
+      patch_source:
+        description: 'Select patch source'
+        required: true
+        default: 'rvx'
+        type: choice
+        options:
+          - rvx
+          - piko
 
 permissions: write-all
 
 jobs:
+  prepare:
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.set-matrix.outputs.matrix }}
+    steps:
+      - name: Set matrix based on patch source
+        id: set-matrix
+        run: |
+          case "${{ inputs.patch_source }}" in
+            rvx)
+              echo 'matrix={"include":[{"id":"YouTube"},{"id":"Music"},{"id":"Reddit"}]}' >> $GITHUB_OUTPUT
+              ;;
+            piko)
+              echo 'matrix={"include":[{"id":"X"}]}' >> $GITHUB_OUTPUT
+              ;;
+          esac
+
   run:
+    needs: prepare
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
-      matrix:
-        include:
-          - id: "YouTube"
-          - id: "Music"
-          - id: "Reddit"
-          - id: "X"
+      matrix: ${{ fromJson(needs.prepare.outputs.matrix) }}
 
     steps:
       - uses: actions/setup-java@v5
@@ -96,6 +117,7 @@ jobs:
           if [ "${{ inputs.build_mode }}" == "dev" ]; then
             VER="${VER}-pre"
           fi
+          VER="${VER}-${{ inputs.patch_source }}"
           echo "version=${VER}" >> $GITHUB_OUTPUT
 
       - name: Download all APKs

@@ -25,7 +25,7 @@
 - ⭐ **Customization**: customize the application to your needs.
 - 💉 **Optimization**: optimized APKs for size & faster usage.
 - 🔒 **Persistent**: patched app won't be updated or overwrited by Play Store.
-- 🔄 **Auto-updates**: supports automatic updates via [Obtainium](https://github.com/ImranR98/Obtainium) using [this config](https://github.com/krvstek/rvx-apks/blob/main/obtainium-rvx.json).
+- 🔄 **Auto-updates**: supports automatic updates via [Obtainium](https://github.com/ImranR98/Obtainium) using [this config](https://github.com/krvstek/rvx-apks/blob/main/obtainium.json).
 - ✨ **And much more!**
 
 ## 📋 List of apps in this repository
