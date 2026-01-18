@@ -1,6 +1,6 @@
 <h1 align="center">
     <a href="#-features">
-        <img src="https://readme-typing-svg.demolab.com?font=Google+Sans&size=25&pause=1000&color=4500FF&center=true&vCenter=true&random=false&width=435&lines=%F0%9F%93%A6+RVX's+pre-made+APKs">
+        <img src="https://readme-typing-svg.demolab.com?font=Google+Sans&size=25&pause=1000&color=4500FF&center=true&vCenter=true&random=false&width=550&lines=%F0%9F%93%A6+Pre-built+APKs+for+Morphe%2C+RVX+%26+Piko">
     </a><br>
     <a href="https://github.com/krvstek/rvx-apks/actions/workflows/build.yml">
         <img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/krvstek/rvx-apks/build.yml?style=flat-square&logo=githubactions&logoColor=%23FFFFFF&label=Build%20Status&color=%234500FF">
@@ -39,11 +39,11 @@
 
 ## ⚠️ Disclaimer
 
-- This project is **not affiliated with RVX or any other patch creators mentioned in this repository**, and is intended for educational use only.  
+- This project is **not affiliated with any patch creators mentioned in this repository**, and is intended for educational use only.  
 - All applications and code **are completely safe**. If you have any concerns about security, you can always **build the applications yourself using the provided source code or with official patching methods**.  
 - The build code was originally written by **[j-hc](https://github.com/j-hc)** and modified by me. All credits for the original implementation go to him.  
 - Some builds may not work as expected due to **ongoing changes in the original apps or patches**. In such cases, please report the issue to patch creators or wait for an update - this repository only provides **pre-built APKs based on available patches**.  
 
-## 📜 Resources
-- [`Wiki`](https://github.com/anddea/revanced-patches/wiki)
-- [`RVX Community Guides`](https://github.com/ReVanced-Extended-Community/Community-Guides)
+---
+
+<p align="center"><i>Maintained with ❤️ by <a href="https://github.com/krvstek">krvstek</a></i></p>
