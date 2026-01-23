@@ -2,7 +2,7 @@
     "apps": [
         {
             "id": "app.morphe.android.youtube",
-            "url": "https://github.com/krvstek/rvx-apks",
+            "url": "https://github.com/krvstek/uni-apks",
             "author": "krvstek",
             "name": "YouTube",
             "installedVersion": null,
@@ -21,7 +21,7 @@
         },
         {
             "id": "app.morphe.android.apps.youtube.music",
-            "url": "https://github.com/krvstek/rvx-apks",
+            "url": "https://github.com/krvstek/uni-apks",
             "author": "krvstek",
             "name": "YouTube Music",
             "installedVersion": null,
@@ -40,7 +40,7 @@
         },
         {
             "id": "com.twitter.android",
-            "url": "https://github.com/krvstek/rvx-apks",
+            "url": "https://github.com/krvstek/uni-apks",
             "author": "krvstek",
             "name": "X",
             "installedVersion": null,
