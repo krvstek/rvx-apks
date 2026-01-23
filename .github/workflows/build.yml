@@ -13,10 +13,9 @@ on:
       patch_source:
         description: 'Select patch source'
         required: true
-        default: 'rvx'
+        default: 'morphe'
         type: choice
         options:
-          - rvx
           - morphe
           - piko
 
@@ -32,11 +31,8 @@ jobs:
         id: set-matrix
         run: |
           case "${{ inputs.patch_source }}" in
-            rvx)
-              echo 'matrix={"include":[{"id":"YouTube"},{"id":"Music"},{"id":"Reddit"}]}' >> $GITHUB_OUTPUT
-              ;;
             morphe)
-              echo 'matrix={"include":[{"id":"YouTube-Morphe"},{"id":"Music-Morphe"}]}' >> $GITHUB_OUTPUT
+              echo 'matrix={"include":[{"id":"YouTube"},{"id":"Music"}]}' >> $GITHUB_OUTPUT
               ;;
             piko)
               echo 'matrix={"include":[{"id":"X"}]}' >> $GITHUB_OUTPUT

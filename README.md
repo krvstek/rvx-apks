@@ -1,6 +1,6 @@
 <h1 align="center">
     <a href="#-features">
-        <img src="https://readme-typing-svg.demolab.com?font=Google+Sans&size=25&pause=1000&color=4500FF&center=true&vCenter=true&random=false&width=550&lines=%F0%9F%93%A6+Pre-built+APKs+for+Morphe%2C+RVX+%26+Piko">
+        <img src="https://readme-typing-svg.demolab.com/?font=Google+Sans&size=25&pause=1000&color=4500FF&center=true&vCenter=true&random=false&width=550&lines=%F0%9F%93%A6+Pre-built+APKs+for+Morphe+%26+Piko">
     </a><br>
     <a href="https://github.com/krvstek/rvx-apks/actions/workflows/build.yml">
         <img alt="Build Status" src="https://img.shields.io/github/actions/workflow/status/krvstek/rvx-apks/build.yml?style=flat-square&logo=githubactions&logoColor=%23FFFFFF&label=Build%20Status&color=%234500FF">
@@ -32,9 +32,8 @@
 
 | 📦 Name | ✏️ Package name | 🧩 Patch repository |
 |:-------:|:---------------:|:-------------------:|
-| <picture><img src="https://play-lh.googleusercontent.com/6am0i3walYwNLc08QOOhRJttQENNGkhlKajXSERf3JnPVRQczIyxw2w3DxeMRTOSdsY=s48-rw" width="20" height="20"></picture> [`YouTube`](https://play.google.com/store/apps/details?id=com.google.android.youtube) | `anddea.youtube`<br>`app.morphe.android.youtube` | [`RVX (anddea)`](https://github.com/anddea/revanced-patches)<br>[`Morphe`](https://github.com/MorpheApp/morphe-patches) |
-| <picture><img src="https://play-lh.googleusercontent.com/zD8UA5CRdiPzbvTwGKtzR4KjQpxqEK6X0tGDpzEaOo0xPEvG6HUiC_0qkpTfzpuMTqU=s48-rw" width="20" height="20"></picture> [`YouTube Music`](https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music) | `anddea.youtube.music`<br>`app.morphe.android.apps.youtube.music` | [`RVX (anddea)`](https://github.com/anddea/revanced-patches)<br>[`Morphe`](https://github.com/MorpheApp/morphe-patches) |
-| <picture><img src="https://play-lh.googleusercontent.com/NaFAbO7ExS4NRAvt2GYkNY6OQf9oVXwmdMTZzA6zrgjjSxhQuTCnjHyf7TgYcoSGqQ=s48-rw" width="20" height="20"></picture> [`Reddit`](https://play.google.com/store/apps/details?id=com.reddit.frontpage) | `com.reddit.frontpage` | [`RVX (anddea)`](https://github.com/anddea/revanced-patches) |
+| <picture><img src="https://play-lh.googleusercontent.com/6am0i3walYwNLc08QOOhRJttQENNGkhlKajXSERf3JnPVRQczIyxw2w3DxeMRTOSdsY=s48-rw" width="20" height="20"></picture> [`YouTube`](https://play.google.com/store/apps/details?id=com.google.android.youtube) | `app.morphe.android.youtube` | [`Morphe`](https://github.com/MorpheApp/morphe-patches) |
+| <picture><img src="https://play-lh.googleusercontent.com/zD8UA5CRdiPzbvTwGKtzR4KjQpxqEK6X0tGDpzEaOo0xPEvG6HUiC_0qkpTfzpuMTqU=s48-rw" width="20" height="20"></picture> [`YouTube Music`](https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music) | `app.morphe.android.apps.youtube.music` | [`Morphe`](https://github.com/MorpheApp/morphe-patches) |
 | <picture><img src="https://play-lh.googleusercontent.com/XyI6Hyz9AFg7E_joVzX2zh6CpWm9B2DG2JuEz5meCFVm4-wTKTnHgqbmg62iFKe4Gzca=s48-rw" width="20" height="20"></picture> [`X`](https://play.google.com/store/apps/details?id=com.twitter.android) | `com.twitter.android` | [`Piko`](https://github.com/crimera/piko) |
 
 ## ⚠️ Disclaimer
