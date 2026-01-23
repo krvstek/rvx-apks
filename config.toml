@@ -5,7 +5,7 @@ parallel-jobs = 1
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube"
 
-[Music-Morphe]
+[Music]
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/google-inc/youtube-music"
 arch = "both"
@@ -16,5 +16,5 @@ uptodown-dlurl = "https://twitter.en.uptodown.com/android"
 apkmirror-dlurl = "https://apkmirror.com/apk/x-corp/twitter"
 patches-source = "crimera/piko"
 cli-source = "inotia00/revanced-cli"
-rv-brand = "Piko"
+brand = "Piko"
 included-patches = "'Dynamic color'"

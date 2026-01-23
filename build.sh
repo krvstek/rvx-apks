@@ -18,7 +18,7 @@ if [ "$OS" = Android ]; then
       	sleep 5
       	termux-setup-storage
     fi
-    OUTPUT_DIR="/sdcard/Download/rvx-output"
+    OUTPUT_DIR="/sdcard/Download/uni-output"
     mkdir -p "$OUTPUT_DIR"
 else
     OUTPUT_DIR="$BUILD_DIR"
@@ -46,7 +46,7 @@ DEF_PATCHES_VER=$(toml_get "$main_config_t" patches-version) || DEF_PATCHES_VER=
 DEF_CLI_VER=$(toml_get "$main_config_t" cli-version) || DEF_CLI_VER="latest"
 DEF_PATCHES_SRC=$(toml_get "$main_config_t" patches-source) || DEF_PATCHES_SRC="MorpheApp/morphe-patches"
 DEF_CLI_SRC=$(toml_get "$main_config_t" cli-source) || DEF_CLI_SRC="MorpheApp/morphe-cli"
-DEF_RV_BRAND=$(toml_get "$main_config_t" rv-brand) || DEF_RV_BRAND="Morphe"
+DEF_BRAND=$(toml_get "$main_config_t" brand) || DEF_BRAND="Morphe"
 DEF_DPI_LIST=$(toml_get "$main_config_t" dpi) || DEF_DPI_LIST="nodpi anydpi 120-640dpi"
 mkdir -p "$TEMP_DIR" "$BUILD_DIR"
 
@@ -97,7 +97,7 @@ for table_name in $(toml_get_table_names); do
 		fi
 	fi
 	if [ "${app_args[riplib]}" = "true" ] && [ "$(toml_get "$t" riplib)" = "false" ]; then app_args[riplib]=false; fi
-	app_args[rv_brand]=$(toml_get "$t" rv-brand) || app_args[rv_brand]=$DEF_RV_BRAND
+	app_args[brand]=$(toml_get "$t" brand) || app_args[brand]=$DEF_BRAND
 
 	app_args[excluded_patches]=$(toml_get "$t" excluded-patches) || app_args[excluded_patches]=""
 	if [ -n "${app_args[excluded_patches]}" ] && [[ ${app_args[excluded_patches]} != *'"'* ]]; then abort "patch names inside excluded-patches must be quoted"; fi
@@ -136,7 +136,7 @@ for table_name in $(toml_get_table_names); do
 		app_args[table]="$table_name (arm64-v8a)"
 		app_args[arch]="arm64-v8a"
 		idx=$((idx + 1))
-		build_rv "$(declare -p app_args)" &
+		build_uni "$(declare -p app_args)" &
 		app_args[table]="$table_name (arm-v7a)"
 		app_args[arch]="arm-v7a"
 		if ((idx >= PARALLEL_JOBS)); then
@@ -144,10 +144,10 @@ for table_name in $(toml_get_table_names); do
 			idx=$((idx - 1))
 		fi
 		idx=$((idx + 1))
-		build_rv "$(declare -p app_args)" &
+		build_uni "$(declare -p app_args)" &
 	else
 		idx=$((idx + 1))
-		build_rv "$(declare -p app_args)" &
+		build_uni "$(declare -p app_args)" &
 	fi
 done
 wait
@@ -155,14 +155,14 @@ rm -rf temp/tmp.*
 if [ -z "$(ls -A1 "${BUILD_DIR}")" ]; then abort "All builds failed."; fi
 
 if [ "$OS" = Android ]; then
-    pr "Moving outputs to /sdcard/Download/rvx-output"
+    pr "Moving outputs to /sdcard/Download/uni-output"
     for apk in "${BUILD_DIR}"/*; do
         if [ -f "$apk" ]; then
             mv -f "$apk" "$OUTPUT_DIR/"
             pr "$(basename "$apk")"
         fi
     done
-    am start -a android.intent.action.VIEW -d "file:///sdcard/Download/rvx-output" -t resource/folder >/dev/null 2>&1 || :
+    am start -a android.intent.action.VIEW -d "file:///sdcard/Download/uni-output" -t resource/folder >/dev/null 2>&1 || :
 fi
 
 log "\n- ▶️ » Install [MicroG-RE](https://github.com/MorpheApp/MicroG-RE/releases) for YouTube and YT Music APKs\n"

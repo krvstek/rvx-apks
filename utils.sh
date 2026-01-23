@@ -75,7 +75,7 @@ get_prebuilts() {
 	local cli_src=$1 cli_ver=$2 patches_src=$3 patches_ver=$4
 	pr "Getting prebuilts (${patches_src%/*})" >&2
 	local cl_dir=${patches_src%/*}
-	cl_dir=${TEMP_DIR}/${cl_dir,,}-rv
+	cl_dir=${TEMP_DIR}/${cl_dir,,}-uni
 	[ -d "$cl_dir" ] || mkdir "$cl_dir"
 
 	for src_ver in "$cli_src CLI $cli_ver morphe-cli" "$patches_src Patches $patches_ver patches"; do
@@ -92,20 +92,20 @@ get_prebuilts() {
 		else abort unreachable; fi
 
 		local dir=${src%/*}
-		dir=${TEMP_DIR}/${dir,,}-rv
+		dir=${TEMP_DIR}/${dir,,}-uni
 		[ -d "$dir" ] || mkdir "$dir"
 
-		local rv_rel="https://api.github.com/repos/${src}/releases" name_ver
+		local uni_rel="https://api.github.com/repos/${src}/releases" name_ver
 		if [ "$ver" = "dev" ]; then
 			local resp
-			resp=$(gh_req "$rv_rel" -) || return 1
+			resp=$(gh_req "$uni_rel" -) || return 1
 			ver=$(jq -e -r '.[] | .tag_name' <<<"$resp" | get_highest_ver) || return 1
 		fi
 		if [ "$ver" = "latest" ]; then
-			rv_rel+="/latest"
+			uni_rel+="/latest"
 			name_ver="*"
 		else
-			rv_rel+="/tags/${ver}"
+			uni_rel+="/tags/${ver}"
 			name_ver="$ver"
 		fi
 
@@ -113,7 +113,7 @@ get_prebuilts() {
 		file=$(find "$dir" -name "${fprefix}-${name_ver#v}.${ext}" -type f 2>/dev/null)
 		if [ -z "$file" ]; then
 			local resp asset name
-			resp=$(gh_req "$rv_rel" -) || return 1
+			resp=$(gh_req "$uni_rel" -) || return 1
 			tag_name=$(jq -r '.tag_name' <<<"$resp")
 			matches=$(jq -e ".assets | map(select(.name | endswith(\"$ext\")))" <<<"$resp")
 			if [ "$(jq 'length' <<<"$matches")" -ne 1 ]; then
@@ -433,7 +433,7 @@ check_sig() {
 	fi
 }
 
-build_rv() {
+build_uni() {
 	eval "declare -A args=${1#*=}"
 	local version="" pkg_name=""
 	local version_mode=${args[version]}
@@ -518,20 +518,20 @@ build_rv() {
 	local microg_patch
 	microg_patch=$(grep "^Name: " <<<"$list_patches" | grep -i "gmscore\|microg" || :) microg_patch=${microg_patch#*: }
 	if [ -n "$microg_patch" ] && [[ ${p_patcher_args[*]} =~ $microg_patch ]]; then
-		epr "You cant include/exclude microg patch as that's done by rvmm builder automatically."
+		epr "You cant include/exclude microg patch as that's done by builder automatically."
 		p_patcher_args=("${p_patcher_args[@]//-[ei] ${microg_patch}/}")
 	fi
 
 	local version_code_patch
     version_code_patch=$(grep "^Name: " <<<"$list_patches" | grep -i "change version code" || :) version_code_patch=${version_code_patch#*: }
     if [ -n "$version_code_patch" ] && [[ ${p_patcher_args[*]} =~ $version_code_patch ]]; then
-        epr "You cant include/exclude version code patch as that's done by rvmm builder automatically."
+        epr "You cant include/exclude version code patch as that's done by builder automatically."
         p_patcher_args=("${p_patcher_args[@]//-[ei] ${version_code_patch}/}")
     fi
 
 	local patcher_args patched_apk
-	local rv_brand_f=${args[rv_brand],,}
-	rv_brand_f=${rv_brand_f// /-}
+	local brand_f=${args[brand],,}
+	brand_f=${brand_f// /-}
 	if [ "${args[patcher_args]}" ]; then p_patcher_args+=("${args[patcher_args]}"); fi
 	patcher_args=("${p_patcher_args[@]}")
 	pr "Building '${table}'"
@@ -541,7 +541,7 @@ build_rv() {
 	if [ -n "$version_code_patch" ]; then
         patcher_args+=("-e \"${version_code_patch}\"")
     fi
-	patched_apk="${TEMP_DIR}/${app_name_l}-${rv_brand_f}-${version_f}-${arch_f}.apk"
+	patched_apk="${TEMP_DIR}/${app_name_l}-${brand_f}-${version_f}-${arch_f}.apk"
     if [ "${args[riplib]}" = true ]; then
     	patcher_args+=("--rip-lib x86_64 --rip-lib x86")
         if [ "$arch" = "arm64-v8a" ]; then
@@ -556,7 +556,7 @@ build_rv() {
 			return 0
 		fi
 	fi
-	local apk_output="${BUILD_DIR}/${app_name_l}-${rv_brand_f}-v${version_f}-${arch_f}.apk"
+	local apk_output="${BUILD_DIR}/${app_name_l}-${brand_f}-v${version_f}-${arch_f}.apk"
 	mv -f "$patched_apk" "$apk_output"
 	pr "Built ${table}: '${apk_output}'"
 }
