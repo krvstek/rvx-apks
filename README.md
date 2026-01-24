@@ -38,10 +38,11 @@
 
 ## ⚠️ Disclaimer
 
-- This project is **not affiliated with any patch creators mentioned in this repository**, and is intended for educational use only.  
-- All applications and code **are completely safe**. If you have any concerns about security, you can always **build the applications yourself using the provided source code or with official patching methods**.  
-- The build code was originally written by **[j-hc](https://github.com/j-hc)** and modified by me. All credits for the original implementation go to him.  
-- Some builds may not work as expected due to **ongoing changes in the original apps or patches**. In such cases, please report the issue to patch creators or wait for an update - this repository only provides **pre-built APKs based on available patches**.  
+- This project is **not affiliated with any patch creators mentioned here**, and is intended for educational & personal use only. 
+- All builds are created using **publicly available tools**. This repository simply automates the process for convenience.
+- The entire process is handled via **public GitHub Actions** to ensure security and transparency. For maximum security, you can always build the applications yourself using the provided source code or official methods.
+- The build code is based on the original implementation by **[j-hc](https://github.com/j-hc)** (with my custom modifications). Full credit for the original implementation goes to him. 
+- This repository only provides pre-built APKs. If a build fails due to upstream app or patch changes, please report it to the patch creators or wait for an update.
 
 ---
 
