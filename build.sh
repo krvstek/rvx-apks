@@ -26,7 +26,7 @@ fi
 
 install_pkg jq
 if [ "$OS" = Android ]; then
-    install_pkg java openjdk-17
+    install_pkg java openjdk-21
 else
     install_pkg java openjdk-21-jdk
 fi
